@@ -398,3 +398,154 @@
             color: #000000;
             display: flex;
         }
+
+        /* Pontos (Alunos) */
+        .mini-perfil {
+            width: 362px;
+            height: 118px;
+            background: rgba(255, 255, 255, 1);
+            opacity: 1;
+            position: absolute;
+            top: 40px;
+            left: 14px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+        }
+
+        .mini-perfil-image1 {
+            position: absolute;
+            left: 20px;
+            bottom: 15px;
+        }
+
+        .mini-perfil-image2 {
+            position: absolute;
+            left: 305px;
+            bottom: 60px;
+        }
+
+        .mini-perfil-foto1 {
+            width: 83px;
+            height: 83px;
+        }
+
+        .mini-perfil-foto2 {
+            width: 45px;
+            height: 45px;
+        }
+
+        .mini-perfil-texto1 {
+            position: absolute;
+            left: 120px;
+            bottom: 60px;
+        }
+
+        .mini-perfil-texto2 {
+            position: absolute;
+            left: 120px;
+            bottom: 45px;
+        }
+
+        .mini-perfil-texto3 {
+            position: absolute;
+            left: 120px;
+            bottom: 20px;
+        }
+
+        .mini-perfil-id1 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 24px;
+        }
+
+        .mini-perfil-id2 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 9px;
+            line-height: 157.9%;
+            color: #888888;
+        }
+
+        .mini-perfil-id3 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 15px;
+            letter-spacing: 0.05em;
+            color: #000000;
+        }
+
+        .recompensa-pontos1 {
+            box-sizing: border-box;
+            position: absolute;
+            width: 359px;
+            height: 113px;
+            top: 200px;
+            left: 15px;
+            background: #FFFFFF;
+            border: 1px solid #EAEAEA;
+            box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .recompensa-pontos1-image {
+            position: absolute;
+            left: 10px;
+            bottom: 25px;
+        }
+
+        .recompensa-pontos1-foto {
+            width: 63px;
+            height: 59px;
+        }
+
+        .recompensa-pontos2 {
+            box-sizing: border-box;
+            position: absolute;
+            width: 359px;
+            height: 113px;
+            top: 350px;
+            left: 15px;
+            background: #FFFFFF;
+            border: 1px solid #EAEAEA;
+            box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .recompensa-pontos3 {
+            box-sizing: border-box;
+            position: absolute;
+            width: 359px;
+            height: 113px;
+            top: 500px;
+            left: 15px;
+            background: #FFFFFF;
+            border: 1px solid #EAEAEA;
+            box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .recompensa-pontos4 {
+            box-sizing: border-box;
+            position: absolute;
+            width: 359px;
+            height: 113px;
+            top: 640px;
+            left: 15px;
+            background: #FFFFFF;
+            border: 1px solid #EAEAEA;
+            box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            overflow: hidden;
+        }
