@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,43 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@100;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@100;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
     <title>Self Check</title>
+
 <body>
+    <a href="index.html" class="volta"><img src="assets/img/bt-back.svg" alt="seta">Voltar</a>
+    <img id="logo-2" src="assets/img/logo-principal.svg" alt="logo-1">
+    <br><br>
     
+       <form action="">
+        <div class="login1">
+            <div class="form-floating mb-3" style="width: 300px;">
+                <input type="email" class="form-control" id="login" placeholder="name@example.com">
+                <label for="floatingInput">Usuario</label>
+            
+            </div>
+            <div class="form-floating" style="width: 300px;">
+                <input type="password" class="form-control" id="senha" placeholder="Password">
+                <label for="floatingPassword">Senha</label>
+            </div>
+        </div>
+            <button type="submit" class="loginbtt" onclick="logar(); return false" >
+                <div class="loginbtt2">Login</div>
+            </button>
+            
+            <button type="submit" class="cadastrobtt">
+                <div class="cadastrobtt2">Cadastre-se</div>
+            </button>
+     
+       </form>
+   
+
+   
+
+    <footer><img id="logo-rodape" src="assets/img/logo-rodape.svg" alt="logo-rodape"></footer>
 </body>
+<script src="assets/js/script.js"></script>
 </html>
+ 
