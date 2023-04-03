@@ -1,170 +1,337 @@
         /*Home*/
-    #home {
-        box-sizing: border-box;
+        #home {
+            box-sizing: border-box;
 
-        position: relative;
-        width: 414px;
-        height: 896px;
+            position: relative;
+            width: 414px;
+            height: 896px;
 
-        background-color: #F9F9F9;
-        border: 1px solid #FFFFFF;
-    }
+            background-color: #F9F9F9;
+            border: 1px solid #FFFFFF;
+        }
 
-    #logo-1 {
-        position: absolute;
-        width: 337px;
-        height: 217px;
-        left: 38px;
-        top: 85px;
-    }
+        #logo-1 {
+            position: absolute;
+            width: 337px;
+            height: 217px;
+            left: 38px;
+            top: 85px;
+        }
 
-    #self-check {
-        position: absolute;
-        width: 149px;
-        height: 38px;
-        left: 144px;
-        top: 345px;
+        #self-check {
+            position: absolute;
+            width: 149px;
+            height: 38px;
+            left: 144px;
+            top: 345px;
 
-        font-family: 'Montserrat', sans-serif;
-        font-size: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 157.9%;
+            font-family: 'Montserrat', sans-serif;
+            font-size: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 157.9%;
 
-        color: #004A8D;
+            color: #004A8D;
 
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
 
-    #texto-inicio {
-        position: absolute;
-        width: 362px;
-        height: 274px;
-        left: 18px;
-        top: 432px;
+        #texto-inicio {
+            position: absolute;
+            width: 362px;
+            height: 274px;
+            left: 18px;
+            top: 432px;
 
-        font-family: 'Abel', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 21px;
-        line-height: 157.9%;
-        text-align: center;
+            font-family: 'Abel', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 157.9%;
+            text-align: center;
 
-        color: #000000;
-    }
+            color: #000000;
+        }
 
-    #faca-seu-checkin {
-        position: absolute;
-        width: 247px;
-        height: 63px;
-        left: 82px;
-        top: 674px;
-        border-radius: 30px;
-        background-color: #004A8D;
-        border: none;
+        #faca-seu-checkin {
+            position: absolute;
+            width: 247px;
+            height: 63px;
+            left: 82px;
+            top: 674px;
+            border-radius: 30px;
+            background-color: #004A8D;
+            border: none;
 
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 157.9%;
-        color: #FFFFFF;
-    }
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 157.9%;
+            color: #FFFFFF;
+        }
 
-    #cadastre-se-home {
-        position: absolute;
-        width: 247px;
-        height: 63px;
-        left: 80px;
-        top: 770px;
-        border-radius: 30px;
-        background-color: #F7941E;
-        border: none;
+        #cadastre-se-home {
+            position: absolute;
+            width: 247px;
+            height: 63px;
+            left: 80px;
+            top: 770px;
+            border-radius: 30px;
+            background-color: #F7941E;
+            border: none;
 
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 157.9%;
-        color: #FFFFFF;
-    }
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 157.9%;
+            color: #FFFFFF;
+        }
 
-    #logo-rodape {
-        position: absolute;
-        width: 33px;
-        height: 21px;
-        left: 190px;
-        top: 800px;
-    }
+        #logo-rodape {
+            position: absolute;
+            width: 33px;
+            height: 21px;
+            left: 190px;
+            top: 800px;
+        }
 
-            /* Perfil */
-    #perfil {
-        position: relative;
-        width: 414px;
-        height: 896px;
+        /* Perfil */
+        #perfil {
+            position: relative;
+            width: 414px;
+            height: 896px;
 
-        background-color: #F9F9F9;
-    }     
-    
-    #foto-fundo-perfil {
-        position: absolute;
-        width: 414px;
-        height: 515px;
-        left: 0px;
-        top: 0px;
-    }
+            background-color: #F9F9F9;
+        }
 
-    #sobrepor {
-        position: absolute;
-        width: 374px;
-        height: 402px;
-        left: 20px;
-        top: 407px;
+        #foto-fundo-perfil {
+            position: absolute;
+            width: 414px;
+            height: 401px;
+            left: 0px;
+            top: 114px;
 
-        background: #FFFFFF;
-        box-shadow: 1px 1px 50px; rgba(0, 0, 0, 0.25);
-        border-radius: 20px;
-    }
+            background: url(#00.jpg);
+        }
 
-    #foto-perfil {
-        position: absolute;
-        width: 150px;
-        height: 150px;
-        left: 134px;
-        top: 332px;
-    }
+        #sobrepor {
+            position: absolute;
+            width: 374px;
+            height: 402px;
+            left: 20px;
+            top: 407px;
 
-    #icon-edit {
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        left: 305px;
-        top: 433px;
-    }
+            background: #FFFFFF;
+            box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+        }
 
-    #nome-usuario-perfil {
-        position: absolute;
-        width: 250px;
-        height: 24px;
-        left: 87px;
-        top: 503px;
+       
 
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
+        #foto-perfil {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            left: 134px;
+            top: 332px;
+            z-index: 2;
+        }
 
-        text-align: center;
-        letter-spacing: 0.01em;
+        #icon-edit {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: 290px;
+            
+        }
 
-        color: #263238;
-    }
+        #nome-usuario-perfil {
 
-    #email-usuario-perfil {
-        position: absolute;
-        width: 281px;
-        height: 19px;
-        left: ;
+            width: 250px;
+            height: 24px;
+            left: 87px;
+            top: 503px;
 
-    }
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+
+            text-align: center;
+            letter-spacing: 0.01em;
+
+            color: #263238;
+        }
+
+        #email-usuario-perfil {
+
+            width: 281px;
+            height: 19px;
+            left: 56px;
+            top: 530px;
+
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 157.9%;
+
+            text-align: center;
+
+            color: #888888;
+        }
+
+        #icon-checkin2 {
+            position: absolute;
+            left: 70px;
+            right: 22px;
+            top: 90px;
+            bottom: 23.24%;
+        }
+
+        #check-ins {
+            position: absolute;
+            width: 105px;
+            height: 22px;
+            left: 98px;
+            top: 73px;
+            
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 157.9%;
+            /* or 22px */
+            
+            
+            color: #666666;
+        }
+
+        #icon-posts {
+            position: absolute;
+            width: 24px;
+            height: 50px;
+            left: 62px;
+            top: 632px;
+        }
+
+        #posts {
+
+            width: 91px;
+            height: 22px;
+            left: 98px;
+            top: 635px;
+
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 157.9;
+
+            color: #666666;
+        }
+
+        #icon-phone {
+
+            left: 15.22%;
+            right: 78.99%;
+            top: 82.69%;
+            bottom: 14.34%;
+        }
+
+        #telefone {
+
+            width: 93px;
+            height: 22px;
+            left: 98px;
+            top: 672px;
+
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 157.9%;
+            /* or 22px */
+
+            color: #666666;
+        }
+
+        #button-sair-perfil {
+
+            width: 166px;
+            height: 45px;
+            left: 126px;
+            top: 744px;
+            border: none;
+
+            background: #F7941E;
+            border-radius: 30px;
+
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 157.9%;
+            color: #FFFFFF;
+        }
+
+        #footer {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 837px;
+            bottom: 0px;
+
+
+            background: #004A8D;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 3px 6px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        #icon-forum {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            left: 50px;
+            top: 15px;
+        }
+
+        #icon-pontos {
+            position: absolute;
+            left: 30.43%;
+            right: 63.53%;
+            top: 94.87%;
+            bottom: 2.34%;
+
+            border: 1px solid #FFFFFF;
+        }
+
+        #icon-checkin {
+            position: absolute;
+            left: 48.79%;
+            right: 45.17%;
+            top: 94.75%;
+            bottom: 2.46%;
+        }
+
+        #icon-perfil {
+            position: absolute;
+            width: 25.12px;
+            height: 25px;
+            left: 280px;
+            top: 847px;
+
+            border-radius: 0px;
+        }
+
+        #icon-sair {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            left: 346px;
+            top: 847px;
+
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
