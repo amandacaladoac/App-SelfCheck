@@ -1,5 +1,4 @@
         /*Home*/
-@media screen and (max-width: 500px) {
     #home {
         box-sizing: border-box;
 
@@ -21,7 +20,7 @@
 
     #self-check {
         position: absolute;
-        width: 137px;
+        width: 149px;
         height: 38px;
         left: 144px;
         top: 345px;
@@ -41,10 +40,10 @@
         position: absolute;
         width: 362px;
         height: 274px;
-        left: 27px;
-        top: 435px;
+        left: 18px;
+        top: 432px;
 
-        font-family: 'Abel';
+        font-family: 'Abel', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 21px;
@@ -95,7 +94,77 @@
         width: 33px;
         height: 21px;
         left: 190px;
-        top: 865px;
+        top: 800px;
     }
+
+            /* Perfil */
+    #perfil {
+        position: relative;
+        width: 414px;
+        height: 896px;
+
+        background-color: #F9F9F9;
+    }     
     
-}
+    #foto-fundo-perfil {
+        position: absolute;
+        width: 414px;
+        height: 515px;
+        left: 0px;
+        top: 0px;
+    }
+
+    #sobrepor {
+        position: absolute;
+        width: 374px;
+        height: 402px;
+        left: 20px;
+        top: 407px;
+
+        background: #FFFFFF;
+        box-shadow: 1px 1px 50px; rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+    }
+
+    #foto-perfil {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        left: 134px;
+        top: 332px;
+    }
+
+    #icon-edit {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 305px;
+        top: 433px;
+    }
+
+    #nome-usuario-perfil {
+        position: absolute;
+        width: 250px;
+        height: 24px;
+        left: 87px;
+        top: 503px;
+
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        text-align: center;
+        letter-spacing: 0.01em;
+
+        color: #263238;
+    }
+
+    #email-usuario-perfil {
+        position: absolute;
+        width: 281px;
+        height: 19px;
+        left: ;
+
+    }
