@@ -676,3 +676,9 @@
             top: -50px;
             
         }
+
+        #camera{
+        position: relative;
+        right: 9px;
+        
+        }
