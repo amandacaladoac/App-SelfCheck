@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,53 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@100;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@100;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
     <title>Self Check</title>
+
 <body>
+    <a href="login.html" class="volta"><img src="assets/img/bt-back.svg" alt="seta">Voltar</a>
+    <img id="logo-2" src="assets/img/logo-principal.svg" alt="logo-1">
+    <br><br>
     
+    <input type="radio" name="opcao" id="alunoradio">
+    <label class="button op" for="alunoradio">ALUNO</label>
+    <input type="radio" name="opcao" id="visitanteradio">
+    <label class="button op" for="visitanteradio">VISITANTE</label>
+    <br><br>
+    <form action="">
+
+        <div class="login2">
+            <div class="form-floating mb-3" style="width: 300px; top: 70px;">
+                <input type="text" class="form-control" id="Usuario" placeholder="name">
+                <label for="floatingInput">Usuario</label>
+
+            </div>
+            <div class="form-floating" style="width: 300px; top: 70px;">
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                <label for="floatingPassword">email</label>
+            </div>
+
+            <div class="form-floating" style="width: 300px; top: 80px;">
+                <input type="password" class="form-control" id="senha" placeholder="password">
+                <label for="floatingPassword">senha</label>
+            </div>
+
+            <div class="form-floating" style="width: 300px; top: 90px;">
+                <input type="password" class="form-control" id="senhaconfirm" placeholder="password">
+                <label for="floatingPassword">confirma senha</label>
+            </div>
+        </div>
+
+        <button type="submit" class="cadastrobtt-2">
+            <div class="cadastrobtt2">Cadastre-se</div>
+        </button>
+
+    </form>
+
+    <footer><img id="logo-rodape" src="assets/img/logo-rodape.svg" alt="logo-rodape"></footer>
+
 </body>
+
 </html>
