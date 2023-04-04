@@ -508,6 +508,33 @@
             height: 59px;
         }
 
+        .recompensa-pontos1-texto1 {
+            position: absolute;
+            width: 150px;
+            height: 17px;
+            left: 80px;
+            top: 26px;
+        }
+
+        .recompensa-pontos1-ts1 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        .recompensa-pontos1-image1 {
+            position: absolute;
+            right: 5px;
+            top: 85px;
+        }
+
+        .recompensa-pontos1-foto1 {
+            width: 380px;
+            height: 8px;
+        }
+
         .recompensa-pontos2 {
             box-sizing: border-box;
             position: absolute;
@@ -520,6 +547,58 @@
             box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
             border-radius: 5px;
             overflow: hidden;
+        }
+
+        .recompensa-pontos1-texto2 {
+            position: absolute;
+            width: 315px;
+            height: 25px;
+            left: 80px;
+            top: 44px;
+        }
+
+        .recompensa-pontos1-ts2 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 25px;
+        }
+
+        .recompensa-pontos1-texto3 {
+            position: absolute;
+            width: 33px;
+            height: 13px;
+            left: 160px;
+            top: 85px;
+        }
+
+        .recompensa-pontos1-ts3 {
+            font-family: 'RocknRoll One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 7px;
+            line-height: 12px;
+            letter-spacing: 0.05em;
+            color: #000000;
+        }
+
+        .recompensa-pontos1-texto4 {
+            position: absolute;
+            width: 76px;
+            height: 15px;
+            left: 266px;
+            top: 5px;
+        }
+
+        .recompensa-pontos1-ts4 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.05em;
+            color: #000000;
         }
 
         .recompensa-pontos3 {
