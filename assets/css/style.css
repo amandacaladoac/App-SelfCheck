@@ -99,7 +99,6 @@
 
         /* Perfil */
         #perfil {
-            position: relative;
             width: 414px;
             height: 896px;
 
@@ -111,7 +110,7 @@
             width: 414px;
             height: 401px;
             left: 0px;
-            top: 114px;
+            top: 0px;
 
             background: url(#00.jpg);
         }
@@ -121,7 +120,7 @@
             width: 374px;
             height: 402px;
             left: 20px;
-            top: 407px;
+            top: 250px;
 
             background: #FFFFFF;
             box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
@@ -135,7 +134,7 @@
             width: 150px;
             height: 150px;
             left: 134px;
-            top: 332px;
+            top: 175px;
             z-index: 2;
         }
 
@@ -143,16 +142,17 @@
             position: absolute;
             width: 40px;
             height: 40px;
-            left: 290px;
+            left: 270px;
+            top: 25px;
             
         }
 
         #nome-usuario-perfil {
-
+            position: absolute;
             width: 250px;
             height: 24px;
-            left: 87px;
-            top: 503px;
+            left: 65px;
+            top: 80px;
 
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
@@ -167,11 +167,11 @@
         }
 
         #email-usuario-perfil {
-
+            position: absolute;
             width: 281px;
             height: 19px;
-            left: 56px;
-            top: 530px;
+            left: 45px;
+            top: 100px;
 
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
@@ -188,7 +188,7 @@
             position: absolute;
             left: 70px;
             right: 22px;
-            top: 90px;
+            top: 160px;
             bottom: 23.24%;
         }
 
@@ -196,8 +196,8 @@
             position: absolute;
             width: 105px;
             height: 22px;
-            left: 98px;
-            top: 73px;
+            left: 105px;
+            top: 142px;
             
             font-family: 'Montserrat';
             font-style: normal;
@@ -214,40 +214,40 @@
             position: absolute;
             width: 24px;
             height: 50px;
-            left: 62px;
-            top: 632px;
+            left: 65px;
+            top: 185px;
         }
 
         #posts {
-
-            width: 91px;
+            position: absolute;
+            width: 105px;
             height: 22px;
-            left: 98px;
-            top: 635px;
+            left: 105px;
+            top: 180px;
 
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
-            line-height: 157.9;
+            line-height: 157.9%;
 
             color: #666666;
         }
 
         #icon-phone {
-
-            left: 15.22%;
+            position: absolute;
+            left: 66px;
             right: 78.99%;
-            top: 82.69%;
+            top: 235px;
             bottom: 14.34%;
         }
 
         #telefone {
-
+            position: absolute;
             width: 93px;
             height: 22px;
-            left: 98px;
-            top: 672px;
+            left: 105px;
+            top: 215px;
 
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
@@ -260,11 +260,11 @@
         }
 
         #button-sair-perfil {
-
+            position: absolute;
             width: 166px;
             height: 45px;
-            left: 126px;
-            top: 744px;
+            left: 105px;
+            top: 325px;
             border: none;
 
             background: #F7941E;
@@ -302,7 +302,7 @@
             position: absolute;
             left: 30.43%;
             right: 63.53%;
-            top: 94.87%;
+            top: 15px;
             bottom: 2.34%;
 
             border: 1px solid #FFFFFF;
@@ -312,7 +312,7 @@
             position: absolute;
             left: 48.79%;
             right: 45.17%;
-            top: 94.75%;
+            top: 15px;
             bottom: 2.46%;
         }
 
@@ -321,17 +321,17 @@
             width: 25.12px;
             height: 25px;
             left: 280px;
-            top: 847px;
+            top: 15px;
 
             border-radius: 0px;
         }
 
         #icon-sair {
             position: absolute;
-            width: 25px;
-            height: 25px;
+            width: 30px;
+            height: 30px;
             left: 346px;
-            top: 847px;
+            top: 15px;
 
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
