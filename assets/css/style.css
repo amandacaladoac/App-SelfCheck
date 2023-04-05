@@ -680,5 +680,6 @@
         #camera{
         position: relative;
         right: 9px;
+        top: -9px;
         
         }
