@@ -3,8 +3,8 @@
             box-sizing: border-box;
 
             position: relative;
-            width: 414px;
-            height: 896px;
+            width: 100%;
+            height: auto;
 
             background-color: #F9F9F9;
             border: 1px solid #FFFFFF;
@@ -12,21 +12,25 @@
 
         #logo-1 {
             position: absolute;
-            width: 337px;
-            height: 217px;
-            left: 38px;
-            top: 85px;
+            width: 80%;
+            max-width: 337px;
+            height: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 8%;
         }
 
         #self-check {
             position: absolute;
-            width: 149px;
-            height: 38px;
-            left: 144px;
-            top: 345px;
+            width: 90%;
+            max-width: 149px;
+            height: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 280px;
 
             font-family: 'Montserrat', sans-serif;
-            font-size: normal;
+            font-size: 16px;
             font-weight: 700;
             font-size: 24px;
             line-height: 157.9%;
@@ -38,15 +42,16 @@
 
         #texto-inicio {
             position: absolute;
-            width: 362px;
-            height: 274px;
-            left: 18px;
-            top: 432px;
+            width: 90%;
+            height: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 380px;
 
             font-family: 'Abel', sans-serif;
             font-style: normal;
             font-weight: 400;
-            font-size: 21px;
+            font-size: 16px;
             line-height: 157.9%;
             text-align: center;
 
@@ -55,10 +60,12 @@
 
         #faca-seu-checkin {
             position: absolute;
-            width: 247px;
-            height: 63px;
-            left: 82px;
-            top: 674px;
+            width: 90%;
+            max-width: 247px;
+            height: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 580px;
             border-radius: 30px;
             background-color: #004A8D;
             border: none;
@@ -66,25 +73,7 @@
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
             font-weight: 700;
-            font-size: 20px;
-            line-height: 157.9%;
-            color: #FFFFFF;
-        }
-
-        #cadastre-se-home {
-            position: absolute;
-            width: 247px;
-            height: 63px;
-            left: 80px;
-            top: 770px;
-            border-radius: 30px;
-            background-color: #F7941E;
-            border: none;
-
-            font-family: 'Montserrat', sans-serif;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 20px;
+            font-size: 16px;
             line-height: 157.9%;
             color: #FFFFFF;
         }
@@ -93,8 +82,9 @@
             position: absolute;
             width: 33px;
             height: 21px;
-            left: 190px;
-            top: 800px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 700px;
         }
 
         /* Perfil */
