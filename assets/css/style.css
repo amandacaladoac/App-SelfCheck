@@ -513,12 +513,6 @@
             line-height: 17px;
         }
 
-        .recompensa-pontos1-image1 {
-            position: absolute;
-            right: 5px;
-            top: 85px;
-        }
-
         .recompensa-pontos1-foto1 {
             width: 380px;
             height: 8px;
@@ -596,20 +590,6 @@
             width: 359px;
             height: 113px;
             top: 500px;
-            left: 15px;
-            background: #FFFFFF;
-            border: 1px solid #EAEAEA;
-            box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
-            border-radius: 5px;
-            overflow: hidden;
-        }
-
-        .recompensa-pontos4 {
-            box-sizing: border-box;
-            position: absolute;
-            width: 359px;
-            height: 113px;
-            top: 640px;
             left: 15px;
             background: #FFFFFF;
             border: 1px solid #EAEAEA;
