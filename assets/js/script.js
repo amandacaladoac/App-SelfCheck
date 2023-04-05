@@ -13,3 +13,20 @@ function logar(){
      }
 
 }
+
+/*camera check-in*/
+ 
+function startVideoFromCamera(){
+
+   const specs = {video:{width:395,height: 1000}}
+
+   navigator.mediaDevices.getUserMedia(specs).then(stream=>{
+
+    const videoElement = document.querySelector("#camera")
+    videoElement.srcObject = stream
+
+   }) .catch(error=>{console.log(error)})
+
+}
+
+window.addEventListener("DOMContentLoaded", startVideoFromCamera)
