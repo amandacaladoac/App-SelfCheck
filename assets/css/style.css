@@ -658,9 +658,33 @@
         }
 
         #camera {
-            position: relative;
-            right: 9px;
+            position: absolute;
+            width: 414px;
+            height: 896px;
+            left: 0px;
+            top: 0px;
+        }
 
+        #botao-ler-qr {
+            position: absolute;
+            width: 181px;
+            height: 49.07px;
+            left: 113px;
+            top: 669px;
+            background: #F7941E;
+            border-radius: 30px;
+            border: none;
+            
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #FFFFFF;
         }
 
         /* Check In - 2 */
@@ -742,6 +766,91 @@
                 font-weight: 700;
                 font-size: 18px;
                 line-height: 20px;
+
+                color: #F8F8F8;
+            }
+
+            .popup {
+                display: none;
+                position: absolute;
+                width: 335px;
+                height: 340px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #fff;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 20px;
+                z-index: 999;
+            }
+
+            .popup img {
+                position: absolute;
+                left: 43%;
+                right: 41.55%;
+                top: 50px;
+                bottom: 53.79%;
+                border: none;
+            }
+
+            .popup h2 {
+                position: absolute;
+                width: 310px;
+                height: 45px;
+                left: 40px;
+                top: 150px;
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 20px;
+                /* or 80% */
+
+                text-align: center;
+
+                color: rgba(247, 148, 30, 0.87);
+            }
+
+            .popup h3 {
+                position: absolute;
+                width: 310px;
+                height: 45px;
+                left: 40px;
+                top: 180px;
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 20px;
+                /* or 80% */
+
+                text-align: center;
+
+                color: rgba(247, 148, 30, 0.87);
+            }
+
+            .popup button {
+                position: absolute;
+                width: 166px;
+                height: 45px;
+                left: 121px;
+                top: 280px;
+                border: none;
+
+                background: #F7941E;
+                border-radius: 30px;
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 20px;
+                /* identical to box height, or 80% */
+
+                text-align: center;
 
                 color: #F8F8F8;
             }

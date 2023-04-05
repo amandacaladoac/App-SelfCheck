@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@100;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@100;400;500&display=swap"
+        rel="stylesheet">
     <title>Self Check</title>
+
 <body>
     <div class="icon-close">
         <button><img src="assets/img/icon-close.svg" alt=""></button>
@@ -24,11 +27,20 @@
     </div>
 
     <div id="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.479183646615!2d-34.88741308522035!3d-8.052504394201863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1997eb26b1bb%3A0x38559aaa17ddef7c!2sFaculdade%20Senac%20Pernambuco!5e0!3m2!1spt-BR!2sbr!4v1680732752536!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.479183646615!2d-34.88741308522035!3d-8.052504394201863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1997eb26b1bb%3A0x38559aaa17ddef7c!2sFaculdade%20Senac%20Pernambuco!5e0!3m2!1spt-BR!2sbr!4v1680732752536!5m2!1spt-BR!2sbr"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <div class="botao-checkin">
-        <button>Check In</button>
+        <button id="botao-popup">Check In</button>
+        <div id="popup" class="popup">
+            <img src="assets/img/icon-checkin-concluido.svg" alt="">
+            <h2>Check In</h2>
+            <h3>Realizado com sucesso!</h3>
+            <button id="fechar-popup">Ok</button>
+        </div>
     </div>
 
     <div>
@@ -41,4 +53,6 @@
         </footer>
     </div>
 </body>
+<script src="assets/js/script.js"></script>
+
 </html>

@@ -30,3 +30,17 @@ function startVideoFromCamera(){
 }
 
 window.addEventListener("DOMContentLoaded", startVideoFromCamera)
+
+/* Pop-pup Check In*/
+
+var botaoPopup = document.getElementById("botao-popup");
+var popup = document.getElementById("popup");
+var fecharPopup = document.getElementById("fechar-popup");
+
+botaoPopup.addEventListener("click", function() {
+  popup.style.display = "block";
+});
+
+fecharPopup.addEventListener("click", function() {
+  popup.style.display = "none";
+});
