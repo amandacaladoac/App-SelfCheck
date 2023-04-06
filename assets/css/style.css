@@ -3,30 +3,34 @@
             box-sizing: border-box;
 
             position: relative;
-            width: 414px;
-            height: 896px;
+            width: 100%;
+            height: auto;
 
             background-color: #F9F9F9;
-            border: 1px solid #FFFFFF;
         }
 
         #logo-1 {
             position: absolute;
-            width: 337px;
-            height: 217px;
-            left: 38px;
-            top: 85px;
+            width: 80%;
+            max-width: 337px;
+            height: auto;
+            left: 48%;
+            transform: translateX(-50%);
+            top: 20px;
+            align-items: center;
         }
 
         #self-check {
             position: absolute;
-            width: 149px;
-            height: 38px;
-            left: 144px;
-            top: 345px;
+            width: 90%;
+            max-width: 149px;
+            height: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 280px;
 
             font-family: 'Montserrat', sans-serif;
-            font-size: normal;
+            font-size: 16px;
             font-weight: 700;
             font-size: 24px;
             line-height: 157.9%;
@@ -38,15 +42,16 @@
 
         #texto-inicio {
             position: absolute;
-            width: 362px;
-            height: 274px;
-            left: 18px;
-            top: 432px;
+            width: 90%;
+            height: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 380px;
 
             font-family: 'Abel', sans-serif;
             font-style: normal;
             font-weight: 400;
-            font-size: 21px;
+            font-size: 16px;
             line-height: 157.9%;
             text-align: center;
 
@@ -55,143 +60,128 @@
 
         #faca-seu-checkin {
             position: absolute;
-            width: 247px;
-            height: 63px;
-            left: 82px;
-            top: 674px;
+            width: 90%;
+            max-width: 247px;
+            height: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 580px;
             border-radius: 30px;
             background-color: #004A8D;
             border: none;
 
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Montserrat',
+            sans-serif;
             font-style: normal;
             font-weight: 700;
-            font-size: 20px;
+            font-size: 18px;
             line-height: 157.9%;
             color: #FFFFFF;
             cursor: pointer;
-        }
-
-        #cadastre-se-home {
-            position: absolute;
-            width: 247px;
-            height: 63px;
-            left: 80px;
-            top: 770px;
-            border-radius: 30px;
-            background-color: #F7941E;
-            border: none;
-
-            font-family: 'Montserrat', sans-serif;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 157.9%;
-            color: #FFFFFF;
         }
 
         #logo-rodape {
             position: absolute;
             width: 33px;
             height: 21px;
-            left: 190px;
-            top: 800px;
+            left: 50%;
+            top: 700px;
         }
 
         /* Perfil */
-        #perfil {
-            position: relative;
-            width: 414px;
-            height: 896px;
+        @media only screen and (max-width: 600px) {
+            #perfil {
+                width: 100%;
+                height: auto;
 
-            background-color: #F9F9F9;
-        }
+                background-color: #F9F9F9;
+            }
 
-        #foto-fundo-perfil {
-            position: absolute;
-            width: 414px;
-            height: 401px;
-            left: 0px;
-            top: 114px;
+            #foto-fundo-perfil {
+                position: absolute;
+                width: 100%;
+                height: auto;
+                box-sizing: border-box;
+                left: 0;
+                top: 0;
 
-            background: url(#00.jpg);
-        }
+            }
 
-        #sobrepor {
-            position: absolute;
-            width: 374px;
-            height: 402px;
-            left: 20px;
-            top: 407px;
+            #sobrepor {
+                position: absolute;
+                width: 374px;
+                height: 402px;
+                left: 20px;
+                top: 250px;
 
             background: #FFFFFF;
             box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
             border-radius: 20px;
         }
 
+       
 
-
-        #foto-perfil {
-            position: absolute;
-            width: 150px;
-            height: 150px;
-            left: 134px;
-            top: 332px;
-            z-index: 2;
-        }
+            #foto-perfil {
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                left: 134px;
+                top: 175px;
+                z-index: 2;
+            }
 
         #icon-edit {
             position: absolute;
             width: 40px;
             height: 40px;
             left: 290px;
-
+            
         }
 
-        #nome-usuario-perfil {
+            #nome-usuario-perfil {
+                position: absolute;
+                width: 100%;
+                height: auto;
+                left: 0;
+                top: 80px;
 
-            width: 250px;
-            height: 24px;
-            left: 87px;
-            top: 503px;
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
 
-            font-family: 'Montserrat', sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
+                text-align: center;
+                letter-spacing: 0.01em;
 
-            text-align: center;
-            letter-spacing: 0.01em;
+                color: #263238;
+            }
 
-            color: #263238;
-        }
+            #email-usuario-perfil {
+                position: absolute;
+                width: 100%;
+                height: auto;
+                left: 0;
+                top: 100px;
 
-        #email-usuario-perfil {
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 157.9%;
 
-            width: 281px;
-            height: 19px;
-            left: 56px;
-            top: 530px;
+                text-align: center;
 
-            font-family: 'Montserrat', sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 157.9%;
+                color: #888888;
+            }
 
-            text-align: center;
-
-            color: #888888;
-        }
-
-        #icon-checkin2 {
-            position: absolute;
-            left: 70px;
-            right: 22px;
-            top: 90px;
-            bottom: 23.24%;
-        }
+            #icon-checkin2 {
+                position: absolute;
+                left: 70px;
+                right: auto;
+                top: 160px;
+                bottom: 23.24%;
+            }
 
         #check-ins {
             position: absolute;
@@ -199,149 +189,160 @@
             height: 22px;
             left: 98px;
             top: 73px;
-
+            
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
             line-height: 157.9%;
             /* or 22px */
-
-
+            
+            
             color: #666666;
         }
 
-        #icon-posts {
-            position: absolute;
-            width: 24px;
-            height: 50px;
-            left: 62px;
-            top: 632px;
-        }
+            #icon-posts {
+                position: absolute;
+                width: 24px;
+                height: 50px;
+                left: 65px;
+                top: 185px;
+            }
 
-        #posts {
+            #posts {
+                position: absolute;
+                width: 105px;
+                height: 22px;
+                left: 105px;
+                top: 180px;
 
-            width: 91px;
-            height: 22px;
-            left: 98px;
-            top: 635px;
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 157.9%;
 
-            font-family: 'Montserrat', sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 157.9;
+                color: #666666;
+            }
 
-            color: #666666;
-        }
+            #icon-phone {
+                position: absolute;
+                left: 66px;
+                right: 78.99%;
+                top: 235px;
+                bottom: 14.34%;
+            }
 
-        #icon-phone {
+            #telefone {
+                position: absolute;
+                width: 93px;
+                height: 22px;
+                left: 105px;
+                top: 215px;
 
-            left: 15.22%;
-            right: 78.99%;
-            top: 82.69%;
-            bottom: 14.34%;
-        }
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 157.9%;
+                /* or 22px */
 
-        #telefone {
+                color: #666666;
+            }
 
-            width: 93px;
-            height: 22px;
-            left: 98px;
-            top: 672px;
+            #button-sair-perfil {
+                position: absolute;
+                width: 50%;
+                height: 45px;
+                left: 105px;
+                top: 325px;
+                border: none;
 
-            font-family: 'Montserrat', sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 157.9%;
-            /* or 22px */
+                background: #F7941E;
+                border-radius: 30px;
 
-            color: #666666;
-        }
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 157.9%;
+                color: #FFFFFF;
+            }
 
-        #button-sair-perfil {
-
-            width: 166px;
-            height: 45px;
-            left: 126px;
-            top: 744px;
-            border: none;
-
-            background: #F7941E;
-            border-radius: 30px;
-
-            font-family: 'Montserrat', sans-serif;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 157.9%;
-            color: #FFFFFF;
-        }
-
-        #footer {
-            position: absolute;
-            left: 0px;
-            right: 0px;
-            top: 837px;
-            bottom: 0px;
+            #footer {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
 
 
-            background: #004A8D;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 3px 6px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.08);
-        }
+                background: #004A8D;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 3px 6px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.08);
+            }
 
-        #icon-forum {
-            position: absolute;
-            width: 25px;
-            height: 25px;
-            left: 50px;
-            top: 15px;
-        }
+            @media only screen and (max-width: 600px) {
+                #footer {
+                    top: auto;
+                    bottom: 0;
+                    height: 50px;
+                    position: fixed;
+                    width: 100%;
+                    padding: 5px;
+                }
+            }
 
-        #icon-pontos {
-            position: absolute;
-            left: 30.43%;
-            right: 63.53%;
-            top: 94.87%;
-            bottom: 2.34%;
+            #icon-forum {
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                left: 31px;
+                top: 15px;
+            }
 
-            border: 1px solid #FFFFFF;
-        }
+            #icon-pontos {
+                position: absolute;
+                left: 111px;
+                width: 25px;
+                height: 25px;
+                top: 15px;
 
-        #icon-checkin {
-            position: absolute;
-            left: 48.79%;
-            right: 45.17%;
-            top: 94.75%;
-            bottom: 2.46%;
-        }
+                border: 1px solid #FFFFFF;
+            }
 
-        #icon-perfil {
-            position: absolute;
-            width: 25.12px;
-            height: 25px;
-            left: 280px;
-            top: 847px;
+            #icon-checkin {
+                position: absolute;
+                left: 191px;
+                height: 25px;
+                width: 25px;
+                top: 15px;
+            }
 
-            border-radius: 0px;
-        }
+            #icon-perfil {
+                position: absolute;
+                width: 25.12px;
+                height: 25px;
+                left: 271px;
+                top: 15px;
 
-        #icon-sair {
-            position: absolute;
-            width: 25px;
-            height: 25px;
-            left: 346px;
-            top: 847px;
+                border-radius: 0px;
+            }
+
+            #icon-sair {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                left: 341px;
+                top: 15px;
 
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
-
-        /*login*/
+         /*login*/
 
         .login1 {
             position: relative;
             left: 55px;
+            top: -50px;
+            
         }
 
         .loginbtt {
@@ -400,235 +401,218 @@
         }
 
         /* Pontos (Alunos) */
-        .mini-perfil {
-            width: 362px;
-            height: 118px;
-            background: rgba(255, 255, 255, 1);
-            opacity: 1;
-            position: absolute;
-            top: 40px;
-            left: 14px;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-            box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
-            overflow: hidden;
-        }
 
-        .mini-perfil-image1 {
-            position: absolute;
-            left: 20px;
-            bottom: 15px;
-        }
+        @media screen and (max-width: 768px) {
+            .mini-perfil {
+                width: 362px;
+                height: 118px;
+                background: rgba(255, 255, 255, 1);
+                opacity: 1;
+                position: absolute;
+                top: 40px;
+                left: 14px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
+                overflow: hidden;
+            }
 
-        .mini-perfil-image2 {
-            position: absolute;
-            left: 305px;
-            bottom: 60px;
-        }
+            .mini-perfil-image1 {
+                position: absolute;
+                left: 20px;
+                bottom: 15px;
+            }
 
-        .mini-perfil-foto1 {
-            width: 83px;
-            height: 83px;
-        }
+            .mini-perfil-image2 {
+                position: absolute;
+                left: 305px;
+                bottom: 60px;
+            }
 
-        .mini-perfil-foto2 {
-            width: 45px;
-            height: 45px;
-        }
+            .mini-perfil-foto1 {
+                width: 83px;
+                height: 83px;
+            }
 
-        .mini-perfil-texto1 {
-            position: absolute;
-            left: 120px;
-            bottom: 60px;
-        }
+            .mini-perfil-foto2 {
+                width: 45px;
+                height: 45px;
+            }
 
-        .mini-perfil-texto2 {
-            position: absolute;
-            left: 120px;
-            bottom: 45px;
-        }
+            .mini-perfil-texto1 {
+                position: absolute;
+                left: 120px;
+                bottom: 60px;
+            }
 
-        .mini-perfil-texto3 {
-            position: absolute;
-            left: 120px;
-            bottom: 20px;
-        }
+            .mini-perfil-texto2 {
+                position: absolute;
+                left: 120px;
+                bottom: 45px;
+            }
 
-        .mini-perfil-id1 {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 17px;
-            line-height: 24px;
-        }
+            .mini-perfil-texto3 {
+                position: absolute;
+                left: 120px;
+                bottom: 20px;
+            }
 
-        .mini-perfil-id2 {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 9px;
-            line-height: 157.9%;
-            color: #888888;
-        }
+            .mini-perfil-id1 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 24px;
+            }
 
-        .mini-perfil-id3 {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 13px;
-            line-height: 15px;
-            letter-spacing: 0.05em;
-            color: #000000;
-        }
+            .mini-perfil-id2 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 9px;
+                line-height: 157.9%;
+                color: #888888;
+            }
 
-        .recompensa-pontos1 {
-            box-sizing: border-box;
-            position: absolute;
-            width: 359px;
-            height: 113px;
-            top: 200px;
-            left: 15px;
-            background: #FFFFFF;
-            border: 1px solid #EAEAEA;
-            box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
-            border-radius: 5px;
-            overflow: hidden;
-        }
+            .mini-perfil-id3 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 15px;
+                letter-spacing: 0.05em;
+                color: #000000;
+            }
 
-        .recompensa-pontos1-image {
-            position: absolute;
-            left: 10px;
-            bottom: 25px;
-        }
+            .recompensa-pontos1 {
+                box-sizing: border-box;
+                position: absolute;
+                width: 359px;
+                height: 113px;
+                top: 200px;
+                left: 15px;
+                background: #FFFFFF;
+                border: 1px solid #EAEAEA;
+                box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
+                border-radius: 5px;
+                overflow: hidden;
+            }
 
-        .recompensa-pontos1-foto {
-            width: 63px;
-            height: 59px;
-        }
+            .recompensa-pontos1-image {
+                position: absolute;
+                left: 10px;
+                bottom: 25px;
+            }
 
-        .recompensa-pontos1-texto1 {
-            position: absolute;
-            width: 150px;
-            height: 17px;
-            left: 80px;
-            top: 26px;
-        }
+            .recompensa-pontos1-foto {
+                width: 63px;
+                height: 59px;
+            }
 
-        .recompensa-pontos1-ts1 {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 17px;
-        }
+            .recompensa-pontos1-texto1 {
+                position: absolute;
+                width: 150px;
+                height: 17px;
+                left: 80px;
+                top: 26px;
+            }
 
-        .recompensa-pontos1-image1 {
-            position: absolute;
-            right: 5px;
-            top: 85px;
-        }
+            .recompensa-pontos1-ts1 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+            }
 
-        .recompensa-pontos1-foto1 {
-            width: 380px;
-            height: 8px;
-        }
+            .recompensa-pontos1-foto1 {
+                width: 380px;
+                height: 8px;
+            }
 
-        .recompensa-pontos2 {
-            box-sizing: border-box;
-            position: absolute;
-            width: 359px;
-            height: 113px;
-            top: 350px;
-            left: 15px;
-            background: #FFFFFF;
-            border: 1px solid #EAEAEA;
-            box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
-            border-radius: 5px;
-            overflow: hidden;
-        }
+            .recompensa-pontos2 {
+                box-sizing: border-box;
+                position: absolute;
+                width: 359px;
+                height: 113px;
+                top: 350px;
+                left: 15px;
+                background: #FFFFFF;
+                border: 1px solid #EAEAEA;
+                box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
+                border-radius: 5px;
+                overflow: hidden;
+            }
 
-        .recompensa-pontos1-texto2 {
-            position: absolute;
-            width: 315px;
-            height: 25px;
-            left: 80px;
-            top: 44px;
-        }
+            .recompensa-pontos1-texto2 {
+                position: absolute;
+                width: 315px;
+                height: 25px;
+                left: 80px;
+                top: 44px;
+            }
 
-        .recompensa-pontos1-ts2 {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 11px;
-            line-height: 25px;
-        }
+            .recompensa-pontos1-ts2 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 25px;
+            }
 
-        .recompensa-pontos1-texto3 {
-            position: absolute;
-            width: 33px;
-            height: 13px;
-            left: 160px;
-            top: 85px;
-        }
+            .recompensa-pontos1-texto3 {
+                position: absolute;
+                width: 33px;
+                height: 13px;
+                left: 160px;
+                top: 85px;
+            }
 
-        .recompensa-pontos1-ts3 {
-            font-family: 'RocknRoll One';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 7px;
-            line-height: 12px;
-            letter-spacing: 0.05em;
-            color: #000000;
-        }
+            .recompensa-pontos1-ts3 {
+                font-family: 'RocknRoll One';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 7px;
+                line-height: 12px;
+                letter-spacing: 0.05em;
+                color: #000000;
+            }
 
-        .recompensa-pontos1-texto4 {
-            position: absolute;
-            width: 76px;
-            height: 15px;
-            left: 266px;
-            top: 5px;
-        }
+            .recompensa-pontos1-texto4 {
+                position: absolute;
+                width: 76px;
+                height: 15px;
+                left: 266px;
+                top: 5px;
+            }
 
-        .recompensa-pontos1-ts4 {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 15px;
-            letter-spacing: 0.05em;
-            color: #000000;
-        }
+            .recompensa-pontos1-ts4 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 15px;
+                letter-spacing: 0.05em;
+                color: #000000;
+            }
 
-        .recompensa-pontos3 {
-            box-sizing: border-box;
-            position: absolute;
-            width: 359px;
-            height: 113px;
-            top: 500px;
-            left: 15px;
-            background: #FFFFFF;
-            border: 1px solid #EAEAEA;
-            box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
-            border-radius: 5px;
-            overflow: hidden;
+            .recompensa-pontos3 {
+                box-sizing: border-box;
+                position: absolute;
+                width: 359px;
+                height: 113px;
+                top: 500px;
+                left: 15px;
+                background: #FFFFFF;
+                border: 1px solid #EAEAEA;
+                box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
+                border-radius: 5px;
+                overflow: hidden;
+            }
+            
         }
-
-        .recompensa-pontos4 {
-            box-sizing: border-box;
-            position: absolute;
-            width: 359px;
-            height: 113px;
-            top: 640px;
-            left: 15px;
-            background: #FFFFFF;
-            border: 1px solid #EAEAEA;
-            box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
-            border-radius: 5px;
-            overflow: hidden;
-        }
-
         /*registro*/
 
         input[type="radio"] {
@@ -677,75 +661,10 @@
 
         }
 
-        @media screen and (max-width: 415px) {
-        .scan {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            
-          }
-          
-          .scan {
-            position: absolute;
-            width: 250px;
-            height: 50%;
-            z-index: 2;
-            overflow: hidden;
+        #camera{
+        position: relative;
+        right: 9px;
         
-          }
-          
-          .scan::before {
-            content: '';
-            position: absolute;
-            inset: 20px;
-            top: 0;
-            left: 5px;
-            width: 165px;
-            height: 2px;
-            background-color: green;
-            filter: drop-shadow(0 0 2px green);
-            background-size: 400px;
-            overflow: hidden;
-            animation: animate 4s ease-in-out infinite;
-          }
-         
-            
-          
-          .border {
-            position: absolute;
-            inset: 0;
-            background-size: 400px;
-            background-repeat: no-repeat;
-            width: 173px;
-            top: 50px
-          }
-          
-       
-
- 
-        
-        @keyframes animate{
-            0%,100%{
-                top: 60px;
-            }
-            50%{
-                top: calc(100% - 160px)
-            }
-        }
-       
-        
-          
-        }
-
-        .alinha{
-         top: 350px;
-        left: 125px;   
-        }
-
-
-        div.cam{
-            overflow: hidden;
-           
         }
        
         
