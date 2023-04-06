@@ -14,9 +14,10 @@
             width: 80%;
             max-width: 337px;
             height: auto;
-            left: 50%;
+            left: 48%;
             transform: translateX(-50%);
-            top: 8%;
+            top: 20px;
+            align-items: center;
         }
 
         #self-check {
@@ -69,7 +70,8 @@
             background-color: #004A8D;
             border: none;
 
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Montserrat',
+            sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 18px;
@@ -82,7 +84,6 @@
             width: 33px;
             height: 21px;
             left: 50%;
-            transform: translateX(-50%);
             top: 700px;
         }
 
