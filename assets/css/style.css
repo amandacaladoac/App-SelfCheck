@@ -677,36 +677,75 @@
 
         }
 
-        .bttcamera {
-            position: relative;
-            width: 247px;
-            height: 63px;
-            left: 77px;
-            top: 700px;
-            background: #004A8D;
-            border-radius: 30px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .bttletra {
-            text-align: center;
-            top: 50px;
-            left: 25px;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 157.9%;
-            color: #FFFFFF;
-        }
-
-
-
-        .camera {
-            position: relative;
+        @media screen and (max-width: 415px) {
+        .scan {
             display: flex;
-            width: 1000px;
-            top: 100px;
+            align-items: center;
+            flex-direction: column;
+            
+          }
+          
+          .scan {
+            position: absolute;
+            width: 250px;
+            height: 50%;
+            z-index: 2;
+            overflow: hidden;
+        
+          }
+          
+          .scan::before {
+            content: '';
+            position: absolute;
+            inset: 20px;
+            top: 0;
+            left: 5px;
+            width: 165px;
+            height: 2px;
+            background-color: green;
+            filter: drop-shadow(0 0 2px green);
+            background-size: 400px;
+            overflow: hidden;
+            animation: animate 4s ease-in-out infinite;
+          }
+         
+            
+          
+          .border {
+            position: absolute;
+            inset: 0;
+            background-size: 400px;
+            background-repeat: no-repeat;
+            width: 173px;
+            top: 50px
+          }
+          
+       
 
+ 
+        
+        @keyframes animate{
+            0%,100%{
+                top: 60px;
+            }
+            50%{
+                top: calc(100% - 160px)
+            }
         }
+       
+        
+          
+        }
+
+        .alinha{
+         top: 350px;
+        left: 125px;   
+        }
+
+
+        div.cam{
+            overflow: hidden;
+           
+        }
+       
+        

@@ -1,73 +1,38 @@
-function logar(){
+function logar() {
 
- 
-    var login = document.getElementById('login').value;
-    var senha = document.getElementById('senha').value;
-     
 
-     if(login == "admin@gmail.com" && senha == "admin"){
-        alert('sucesso');
-        location.href ="checkin.html";
-     }else{
-        alert('Usuario ou senha incorretos');
-     }
+   var login = document.getElementById('login').value;
+   var senha = document.getElementById('senha').value;
+
+
+   if (login == "admin@gmail.com" && senha == "admin") {
+      alert('sucesso');
+      location.href = "checkin.html";
+   } else {
+      alert('Usuario ou senha incorretos');
+   }
 
 }
 
 /*camera check-in*/
- 
-function getUserMedia(constraints) {
-  // if Promise-based API is available, use it
-  if (navigator.mediaDevices) {
-    return navigator.mediaDevices.getUserMedia(constraints);
-  }
-    
-  // otherwise try falling back to old, possibly prefixed API...
-  var legacyApi = navigator.getUserMedia || navigator.webkitGetUserMedia ||
-    navigator.mozGetUserMedia || navigator.msGetUserMedia;
-    
-  if (legacyApi) {
-    // ...and promisify it
-    return new Promise(function (resolve, reject) {
-      legacyApi.bind(navigator)(constraints, resolve, reject);
-    });
-  }
+
+function startVideoFromCamera(){
+
+  const specs = {video:{width:395,height: 1000, facingMode: "environment"}}
+
+  navigator.mediaDevices.getUserMedia(specs).then(stream=>{
+
+   const videoElement = document.querySelector("#camera")
+   videoElement.srcObject = stream
+
+  }) .catch(error=>{console.log(error)})
+
 }
 
-function getStream (type) {
-  if (!navigator.mediaDevices && !navigator.getUserMedia && !navigator.webkitGetUserMedia &&
-    !navigator.mozGetUserMedia && !navigator.msGetUserMedia) {
-    alert('User Media API not supported.');
-    return;
-  }
+window.addEventListener("DOMContentLoaded", startVideoFromCamera)
 
-  var constraints = {};
-  constraints[type] = true;
-  
+function next() {
 
-
-  
-  getUserMedia(constraints)
-    .then(function (stream) {
-      var mediaControl = document.querySelector(type);
-      
-      if ('srcObject' in mediaControl) {
-        mediaControl.srcObject = stream;
-      } else if (navigator.mozGetUserMedia) {
-        mediaControl.mozSrcObject = stream;
-      } else {
-        mediaControl.src = (window.URL || window.webkitURL).createObjectURL(stream);
-      }
-      
-      mediaControl.play();
-    })
-    .catch(function (err) {
-      alert('Error: ' + err);
-    });
-  }
-
-
-function next(){
-  
-    window.location.href ="login.html"
+   window.location.href = "login.html"
 }
+
