@@ -30,9 +30,3 @@ function startVideoFromCamera(){
 }
 
 window.addEventListener("DOMContentLoaded", startVideoFromCamera)
-
-function next() {
-
-   window.location.href = "login.html"
-}
-
