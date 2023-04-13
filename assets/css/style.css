@@ -19,7 +19,7 @@
            height: auto;
            left: 50%;
            transform: translateX(-50%);
-           top: 20px;
+           top: 60px;
            align-items: center;
        }
 
@@ -30,7 +30,7 @@
            height: auto;
            left: 50%;
            transform: translateX(-50%);
-           top: 250px;
+           top: 270px;
 
            font-family: 'Montserrat', sans-serif;
            font-size: 16px;
@@ -49,7 +49,7 @@
            height: auto;
            left: 50%;
            transform: translateX(-50%);
-           top: 330px;
+           top: 350px;
 
            font-family: 'Abel', sans-serif;
            font-style: normal;
@@ -65,7 +65,7 @@
            position: absolute;
            width: 90%;
            max-width: 247px;
-           height: auto;
+           height: 55px;
            left: 50%;
            transform: translateX(-50%);
            top: 510px;
@@ -88,7 +88,7 @@
            width: 33px;
            height: 21px;
            left: 50%;
-           top: 610px;
+           top: 640px;
            padding-bottom: 0%;
        }
 
@@ -347,25 +347,17 @@
 
         @media only screen and (max-width: 600px) {
 
-            .logo-checkin {
-                position: absolute;
-                left: 43.48%;
-                right: 45.53%;
-                top: 10%;
-                bottom: 75.84%;
-            }
-
             .texto-checkin2 h2 {
                 position: absolute;
                 width: 343px;
                 height: 20px;
-                left: 18px;
-                top: 20%;
+                left: 50px;
+                top: 10%;
 
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 700;
-                font-size: 22px;
+                font-size: 18px;
                 line-height: 20px;
                 color: #F7941E;
             }
@@ -374,26 +366,25 @@
                 position: absolute;
                 width: 329px;
                 height: 20px;
-                left: 25px;
-                top: 23%;
+                left: 55px;
+                top: 13%;
 
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 500;
-                font-size: 15px;
+                font-size: 12px;
                 line-height: 20px;
 
 
                 color: #808080;
             }
 
-            iframe {
-                position: absolute;
-                width: 276px;
-                height: 276px;
-                left: 12%;
-                top: 33%;
-                border-radius: 30px;
+            #mapa {
+                height: 380px;
+                width: 300px;
+                top: 165px; 
+                left: 28px; 
+                border-radius: 20px;
             }
 
             .botao-checkin button {
@@ -521,10 +512,11 @@
 
        }
 
+
        .loginbtt {
            position: absolute;
            width: 247px;
-           height: 63px;
+           height: 60px;
            left: 20%;
            top: 520px;
            background: #004A8D;
@@ -545,7 +537,7 @@
        .cadastrobtt {
            position: absolute;
            width: 247px;
-           height: 63px;
+           height: 60px;
            left: 20%;
            top: 600px;
            background: #F7941E;
