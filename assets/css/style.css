@@ -88,7 +88,7 @@
            width: 33px;
            height: 21px;
            left: 50%;
-           top: 700px;
+           top: 720px;
            padding-bottom: 0%;
        }
 
@@ -302,13 +302,13 @@
            position: absolute;
            width: 25px;
            height: 25px;
-           left: 31px;
+           left: 10%;
            top: 15px;
        }
 
        #icon-pontos {
            position: absolute;
-           left: 111px;
+           left: 26%;
            width: 25px;
            height: 25px;
            top: 15px;
@@ -316,7 +316,7 @@
 
        #icon-checkin {
            position: absolute;
-           left: 191px;
+           left: 45%;
            height: 25px;
            width: 25px;
            top: 15px;
@@ -326,7 +326,7 @@
            position: absolute;
            width: 25.12px;
            height: 25px;
-           left: 270px;
+           left: 64%;
            top: 15px;
 
            border-radius: 0px;
@@ -336,7 +336,7 @@
            position: absolute;
            width: 30px;
            height: 30px;
-           left: 330px;
+           left: 80%;
            top: 15px;
 
            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
