@@ -594,291 +594,296 @@
         }
 
 
-       /* Pontos (Alunos) */
+            /* Pontos (Alunos) */
 
-       @media screen and (max-width: 768px) {
-           .mini-perfil {
-               width: 362px;
-               height: 118px;
-               background: rgba(255, 255, 255, 1);
-               opacity: 1;
-               position: absolute;
-               top: 40px;
-               left: 14px;
-               border-top-left-radius: 20px;
-               border-top-right-radius: 20px;
-               border-bottom-left-radius: 20px;
-               border-bottom-right-radius: 20px;
-               box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
-               overflow: hidden;
-           }
+            @media screen and (max-width: 768px) {
+                .mini-perfil {
+                    width: 362px;
+                    height: 118px;
+                    background: rgba(255, 255, 255, 1);
+                    opacity: 1;
+                    position: absolute;
+                    top: 40px;
+                    left: 14px;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
+                    overflow: hidden;
+                }
 
-           .mini-perfil-image1 {
-               position: absolute;
-               left: 20px;
-               bottom: 15px;
-           }
+                .mini-perfil-image1 {
+                    position: absolute;
+                    left: 20px;
+                    bottom: 15px;
+                }
 
-           .mini-perfil-image2 {
-               position: absolute;
-               left: 305px;
-               bottom: 60px;
-           }
+                .mini-perfil-image2 {
+                    position: absolute;
+                    left: 305px;
+                    bottom: 60px;
+                }
 
-           .mini-perfil-foto1 {
-               width: 83px;
-               height: 83px;
-           }
+                .mini-perfil-foto1 {
+                    width: 83px;
+                    height: 83px;
+                }
 
-           .mini-perfil-foto2 {
-               width: 45px;
-               height: 45px;
-           }
+                .mini-perfil-foto2 {
+                    width: 45px;
+                    height: 45px;
+                }
 
-           .mini-perfil-texto1 {
-               position: absolute;
-               left: 120px;
-               bottom: 60px;
-           }
+                .mini-perfil-texto1 {
+                    position: absolute;
+                    left: 120px;
+                    bottom: 60px;
+                }
 
-           .mini-perfil-texto2 {
-               position: absolute;
-               left: 120px;
-               bottom: 45px;
-           }
+                .mini-perfil-texto2 {
+                    position: absolute;
+                    left: 120px;
+                    bottom: 45px;
+                }
 
-           .mini-perfil-texto3 {
-               position: absolute;
-               left: 120px;
-               bottom: 20px;
-           }
+                .mini-perfil-texto3 {
+                    position: absolute;
+                    left: 120px;
+                    bottom: 20px;
+                }
 
-           .mini-perfil-id1 {
-               font-family: 'Montserrat';
-               font-style: normal;
-               font-weight: 400;
-               font-size: 17px;
-               line-height: 24px;
-           }
+                .mini-perfil-id1 {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 24px;
+                }
 
-           .mini-perfil-id2 {
-               font-family: 'Montserrat';
-               font-style: normal;
-               font-weight: 400;
-               font-size: 9px;
-               line-height: 157.9%;
-               color: #888888;
-           }
+                .mini-perfil-id2 {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 9px;
+                    line-height: 157.9%;
+                    color: #888888;
+                }
 
-           .mini-perfil-id3 {
-               font-family: 'Montserrat';
-               font-style: normal;
-               font-weight: 500;
-               font-size: 13px;
-               line-height: 15px;
-               letter-spacing: 0.05em;
-               color: #000000;
-           }
+                #pontos {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 15px;
+                    letter-spacing: 0.05em;
+                    color: #000000;
+                }
 
-           .recompensa-pontos1 {
-               box-sizing: border-box;
-               position: absolute;
-               width: 359px;
-               height: 113px;
-               top: 200px;
-               left: 15px;
-               background: #FFFFFF;
-               border: 1px solid #EAEAEA;
-               box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
-               border-radius: 5px;
-               overflow: hidden;
-           }
+                .recompensa-pontos1 {
+                    box-sizing: border-box;
+                    position: absolute;
+                    width: 359px;
+                    height: 120px;
+                    top: 200px;
+                    left: 15px;
+                    background: #FFFFFF;
+                    border: 1px solid #EAEAEA;
+                    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
+                    border-radius: 5px;
+                    overflow: hidden;
+                }
 
-           .recompensa-pontos1-image {
-               position: absolute;
-               left: 10px;
-               bottom: 25px;
-           }
+                .recompensa-pontos1-image {
+                    position: absolute;
+                    left: 10px;
+                    bottom: 37px;
+                }
 
-           .recompensa-pontos1-foto {
-               width: 63px;
-               height: 59px;
-           }
+                .recompensa-pontos1-foto {
+                    width: 63px;
+                    height: 59px;
+                }
 
-           .recompensa-pontos1-texto1 {
-               position: absolute;
-               width: 150px;
-               height: 17px;
-               left: 80px;
-               top: 26px;
-           }
+                .recompensa-pontos1-texto1 {
+                    position: absolute;
+                    width: 150px;
+                    height: 17px;
+                    left: 80px;
+                    top: 26px;
+                }
 
-           .recompensa-pontos1-ts1 {
-               font-family: 'Montserrat';
-               font-style: normal;
-               font-weight: 700;
-               font-size: 14px;
-               line-height: 17px;
-           }
+                .recompensa-pontos1-ts1 {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                }
 
-           .recompensa-pontos1-foto1 {
-               width: 380px;
-               height: 8px;
-           }
+                .recompensa-pontos1-foto1 {
+                    width: 380px;
+                    height: 8px;
+                }
 
-           .recompensa-pontos2 {
-               box-sizing: border-box;
-               position: absolute;
-               width: 359px;
-               height: 113px;
-               top: 350px;
-               left: 15px;
-               background: #FFFFFF;
-               border: 1px solid #EAEAEA;
-               box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
-               border-radius: 5px;
-               overflow: hidden;
-           }
+                .recompensa-pontos2 {
+                    box-sizing: border-box;
+                    position: absolute;
+                    width: 359px;
+                    height: 120px;
+                    top: 360px;
+                    left: 15px;
+                    background: #FFFFFF;
+                    border: 1px solid #EAEAEA;
+                    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
+                    border-radius: 5px;
+                    overflow: hidden;
+                }
 
-           .recompensa-pontos1-texto2 {
-               position: absolute;
-               width: 315px;
-               height: 25px;
-               left: 80px;
-               top: 44px;
-           }
+                .recompensa-pontos1-texto2 {
+                    position: absolute;
+                    width: 315px;
+                    height: 25px;
+                    left: 80px;
+                    top: 44px;
+                }
 
-           .recompensa-pontos1-ts2 {
-               font-family: 'Montserrat';
-               font-style: normal;
-               font-weight: 400;
-               font-size: 11px;
-               line-height: 25px;
-           }
+                .recompensa-pontos1-ts2 {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 11px;
+                    line-height: 25px;
+                }
 
-           .recompensa-pontos1-texto3 {
-               position: absolute;
-               width: 33px;
-               height: 13px;
-               left: 160px;
-               top: 85px;
-           }
+                .recompensa-pontos1-texto3 {
+                    position: absolute;
+                    width: 33px;
+                    height: 13px;
+                    left: 160px;
+                    top: 85px;
+                }
 
-           .recompensa-pontos1-ts3 {
-               font-family: 'RocknRoll One';
-               font-style: normal;
-               font-weight: 400;
-               font-size: 7px;
-               line-height: 12px;
-               letter-spacing: 0.05em;
-               color: #000000;
-           }
+                .recompensa-pontos1-ts3 {
+                    font-family: 'RocknRoll One';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 7px;
+                    line-height: 12px;
+                    letter-spacing: 0.05em;
+                    color: #000000;
+                }
 
-           .recompensa-pontos1-texto4 {
-               position: absolute;
-               width: 76px;
-               height: 15px;
-               left: 266px;
-               top: 5px;
-           }
+                .recompensa-pontos1-texto4 {
+                    position: absolute;
+                    width: 76px;
+                    height: 15px;
+                    left: 266px;
+                    top: 5px;
+                }
 
-           .recompensa-pontos1-ts4 {
-               font-family: 'Montserrat';
-               font-style: normal;
-               font-weight: 500;
-               font-size: 12px;
-               line-height: 15px;
-               letter-spacing: 0.05em;
-               color: #000000;
-           }
+                .recompensa-pontos1-ts4 {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    letter-spacing: 0.05em;
+                    color: #000000;
+                }
 
-           .recompensa-pontos3 {
-               box-sizing: border-box;
-               position: absolute;
-               width: 359px;
-               height: 113px;
-               top: 500px;
-               left: 15px;
-               background: #FFFFFF;
-               border: 1px solid #EAEAEA;
-               box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
-               border-radius: 5px;
-               overflow: hidden;
-           }
+                .recompensa-pontos3 {
+                    box-sizing: border-box;
+                    position: absolute;
+                    width: 359px;
+                    height: 120px;
+                    top: 520px;
+                    left: 15px;
+                    background: #FFFFFF;
+                    border: 1px solid #EAEAEA;
+                    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
+                    border-radius: 5px;
+                    overflow: hidden;
+                }
 
-           .progresso-barra {
-               position: absolute;
-               top: 92px;
-               left: 25px;
-               width: 300px;
-               height: 10px;
-               background-color: #ddd;
-               border-radius: 10px;
-           }
+                .progresso-barra {
+                    position: absolute;
+                    top: 92px;
+                    left: 25px;
+                    width: 300px;
+                    height: 10px;
+                    background-color: #ddd;
+                    border-radius: 10px;
+                }
 
-           .progresso-barra div {
-               height: 100%;
-               text-align: right;
-               padding: 0 10px;
-               line-height: 10px;
-               width: 0;
-               background-color: #4caf50;
-               color: white;
-               border-radius: 10px;
-           }
+                .progresso-barra div {
+                    height: 100%;
+                    text-align: right;
+                    padding: 0 10px;
+                    line-height: 10px;
+                    width: 0;
+                    background-color: #4caf50;
+                    color: white;
+                    border-radius: 10px;
+                }
 
-           .progresso-label {
-               font-size: 11px;
-               text-align: center;
-           }
+                .progresso-label {
+                    font-size: 11px;
+                    text-align: center;
+                }
 
-           .progresso-barra2 {
-               position: absolute;
-               top: 92px;
-               left: 25px;
-               width: 300px;
-               height: 10px;
-               background-color: #ddd;
-               border-radius: 10px;
-           }
+                .progresso-barra2 {
+                    position: absolute;
+                    top: 92px;
+                    left: 25px;
+                    width: 300px;
+                    height: 10px;
+                    background-color: #ddd;
+                    border-radius: 10px;
+                }
 
-           .progresso-barra2 div {
-               height: 100%;
-               text-align: right;
-               padding: 0 10px;
-               line-height: 10px;
-               width: 0;
-               background-color: #4caf50;
-               color: white;
-               border-radius: 10px;
-           }
+                .progresso-barra2 div {
+                    height: 100%;
+                    text-align: right;
+                    padding: 0 10px;
+                    line-height: 10px;
+                    width: 0;
+                    background-color: #4caf50;
+                    color: white;
+                    border-radius: 10px;
+                }
 
-           .progresso-label2 {
-               font-size: 11px;
-               text-align: center;
-           }
+                .progresso-label2 {
+                    font-size: 11px;
+                    text-align: center;
+                }
 
-           .progresso-barra3 {
-               position: absolute;
-               top: 92px;
-               left: 25px;
-               width: 300px;
-               height: 10px;
-               background-color: #ddd;
-               border-radius: 10px;
-           }
+                .progresso-barra3 {
+                    position: absolute;
+                    top: 92px;
+                    left: 25px;
+                    width: 300px;
+                    height: 10px;
+                    background-color: #ddd;
+                    border-radius: 10px;
+                }
 
-           .progresso-barra3 div {
-               height: 100%;
-               text-align: right;
-               padding: 0 10px;
-               line-height: 10px;
-               width: 0;
-               background-color: #4caf50;
-               color: white;
-               border-radius: 10px;
-           }
-       }
+                .progresso-barra3 div {
+                    height: 100%;
+                    text-align: right;
+                    padding: 0 10px;
+                    line-height: 10px;
+                    width: 0;
+                    background-color: #4caf50;
+                    color: white;
+                    border-radius: 10px;
+                }
+
+                .progresso-label3 {
+                    font-size: 11px;
+                    text-align: center;
+                }
+            }
 
        /*registro*/
 

@@ -27,10 +27,10 @@
             <h1 class="mini-perfil-id2">Luis_Ernani@fac.pe.senac.br</h1>
         </div>
         <div class="mini-perfil-texto3">
-            <h1 class="mini-perfil-id3">Saldo: 11 Pontos</h1>
+            <span id="pontos"></span>
         </div>
     </div>
-    <div class="recompensa-pontos1">
+    <div class="recompensa-pontos1" onclick="removerPontos(100)">
         <div class="recompensa-pontos1-image">
             <img class="recompensa-pontos1-foto" src="/assets/img/Ava.svg" alt="recompensa-pontos1-foto">
         </div>
@@ -41,12 +41,11 @@
             <h1 class="recompensa-pontos1-ts2">Lorem ipsum dolor sit amet, consectetur. </h1>
         </div>
         <div class="recompensa-pontos1-texto4">
-            <h1 class="recompensa-pontos1-ts4">400 Pontos</h1>
+            <h1 class="recompensa-pontos1-ts4">100 Pontos</h1>
         </div>
         <div class="progresso-barra">
             <div class="progresso-label">0</div>
         </div>
-    </div>
     <div>
         <footer id="footer">
             <img id="icon-forum" src="assets/img/icon-forum.svg" alt="">
@@ -58,5 +57,10 @@
     </div>
 </body>
 <script src="/assets/js/barra.js"></script>
+<script src="/assets/js/pontos.js"></script>
+<script src="/assets/js/script.js"></script>
+<script>
+    atualizarPontos();
+</script>
 
 </html>
