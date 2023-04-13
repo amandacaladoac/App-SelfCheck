@@ -88,7 +88,7 @@
            width: 33px;
            height: 21px;
            left: 50%;
-           top: 640px;
+           top: 700px;
            padding-bottom: 0%;
        }
 
@@ -366,7 +366,7 @@
                 position: absolute;
                 width: 329px;
                 height: 20px;
-                left: 46px;
+                left: 50px;
                 top: 13%;
 
                 font-family: 'Montserrat';
@@ -380,10 +380,11 @@
             }
 
             #mapa {
+                position: absolute;
                 height: 380px;
-                width: 300px;
+                width: 330px;
                 top: 165px; 
-                left: 28px; 
+                left: 10px; 
                 border-radius: 20px;
             }
 
