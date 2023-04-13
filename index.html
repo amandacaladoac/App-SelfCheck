@@ -9,8 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@100;400;500&display=swap" rel="stylesheet">
     <link href="/assets/img/logo-rodape.svg" rel="icon">
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="assets/img/72.png" />
+    <link rel="apple-touch-icon" href="assets/img/96.png" />
+    <link rel="apple-touch-icon" href="assets/img/128.png" />
+    <link rel="apple-touch-icon" href="assets/img/144.png" />
+    <link rel="apple-touch-icon" href="assets/img/152.png" />
+    <link rel="apple-touch-icon" href="assets/img/192.png" />
+    <link rel="apple-touch-icon" href="assets/img/384.png" />
+    <link rel="apple-touch-icon" href="assets/img/512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+    <meta name="theme-color" content="#F9F9F9" />
     <title>Self Check</title>
 </head>
+
 <body id="home">
     
         <!--Home-->
@@ -23,4 +36,32 @@
 
 </body>
 <script src="assets/js/script.js"></script>
+<script>
+    let newWorker;
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js').then(reg => {
+        reg.addEventListener('updatefound', () => {
+          // A wild service worker has appeared in reg.installing!
+          newWorker = reg.installing;
+          newWorker.addEventListener('statechange', () => {
+            // Has network.state changed?
+            switch (newWorker.state) {
+              case 'installed':
+                if (navigator.serviceWorker.controller) {
+                  // new update available
+                }
+                // No update available
+                break;
+            }
+          });
+        });
+      });
+      let refreshing;
+      navigator.serviceWorker.addEventListener('controllerchange', function () {
+        if (refreshing) return;
+        window.location.reload();
+        refreshing = true;
+      });
+    }
+  </script>
 </html>
