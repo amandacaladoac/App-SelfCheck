@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@100;400;500&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="">
     <link href="/assets/img/logo-rodape.svg" rel="icon">
     <title>Self Check</title>
 
@@ -24,12 +25,7 @@
             <h3>R. do Pombal, 57 - Santo Amaro, Recife - PE</h3>
         </div>
     
-        <div id="mapa">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.479183646615!2d-34.88741308522035!3d-8.052504394201863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1997eb26b1bb%3A0x38559aaa17ddef7c!2sFaculdade%20Senac%20Pernambuco!5e0!3m2!1spt-BR!2sbr!4v1680732752536!5m2!1spt-BR!2sbr"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <div id="mapa" style="height: 250px; width: 250px; top: 250px; left: 55px; border-radius: 10px;"></div>
     
         <div class="botao-checkin">
             <button id="botao-popup">Check In</button>
@@ -53,5 +49,7 @@
     </div>
 </body>
 <script src="assets/js/script.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+<script src="assets/js/loc.js"></script>
 
 </html>
