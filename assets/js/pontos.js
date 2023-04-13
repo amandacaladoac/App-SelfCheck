@@ -47,6 +47,10 @@ function removerPontos(quantidade) {
   }
 }
 
+document.getElementById("botao-popup").onclick = function () {
+  location.href = "pontos-aluno.html";
+  adicionarPontos(10);
+};
 
  /* TEST */
 document.getElementById("test").onclick = function () {
@@ -57,4 +61,3 @@ document.getElementById("test2").onclick = function () {
   location.href = "pontos-aluno.html";
   removerPontos(10)
 };
-
