@@ -68,7 +68,7 @@
            height: 55px;
            left: 50%;
            transform: translateX(-50%);
-           top: 510px;
+           top: 540px;
            border-radius: 30px;
            background-color: #004A8D;
            border: none;
@@ -384,7 +384,7 @@
                 height: 380px;
                 width: 330px;
                 top: 165px; 
-                left: 10px; 
+                left: 15px; 
                 border-radius: 20px;
             }
 
