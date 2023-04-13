@@ -87,8 +87,8 @@
            position: absolute;
            width: 33px;
            height: 21px;
-           left: 50%;
-           top: 720px;
+           left: 45%;
+           top: 750px;
            padding-bottom: 0%;
        }
 
@@ -582,7 +582,7 @@
             width: 33px;
             height: 21px;
             left: 48%;
-            top: 700px;
+            top: 720px;
             padding-bottom: 0%;
         }
 
@@ -878,7 +878,7 @@
                 }
             }
 
-       /*registro*/
+       /* Cadastro */
 
        input[type="radio"] {
            display: none;
@@ -894,6 +894,7 @@
            padding: 10px 30px;
            align-items: center;
            cursor: pointer;
+           top: 260px;
        }
 
        input[type="radio"]:checked+.button {
@@ -904,16 +905,12 @@
            left: 55px;
        }
 
-       #logo-rodape {
-           left: 180px;
-       }
-
        .cadastrobtt-2 {
            position: absolute;
            width: 247px;
-           height: 63px;
+           height: 60px;
            left: 77px;
-           top: 700px;
+           top: 660px;
            background: #F7941E;
            border-radius: 30px;
            border: none;
