@@ -1,96 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/temp.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@100;400;500&display=swap"
         rel="stylesheet">
     <link href="/assets/img/logo-rodape.svg" rel="icon">
     <title>Self Check</title>
+</head>
 
 <body>
     <div class="mini-perfil">
-        <div class="mini-perfil-image1">
-            <img class="mini-perfil-foto1" src="assets/img/foto-perfil.svg" alt="mini-perfil-foto">
-        </div>
-        <div class="mini-perfil-image2"><img class="mini-perfil-foto2" src="assets/img/icon-edit.svg"
-                alt="mini-perfil-foto"></div>
+        <img class="mini-perfil-foto1" src="img/foto-perfil.svg" alt="mini-perfil-foto">
         <div class="mini-perfil-texto1">
             <h1 class="mini-perfil-id1">Luis_Ernani</h1>
-        </div>
-        <div class="mini-perfil-texto2">
-            <h1 class="mini-perfil-id2">Luis_Ernani@fac.pe.senac.br</h1>
-        </div>
-        <div class="mini-perfil-texto3">
+            <h3 class="mini-perfil-id2">Luis_Ernani@fac.pe.senac.br</h3>
             <span id="pontos"></span>
+        </div>
+        <div class="mini-perfil-image2"><img class="mini-perfil-foto2" src="img/icon-edit.svg" alt="mini-perfil-foto">
         </div>
     </div>
     <div class="recompensa-pontos1" onclick="removerPontos(100)">
-        <div class="recompensa-pontos1-image">
-            <img class="recompensa-pontos1-foto" src="/assets/img/Ava.svg" alt="recompensa-pontos1-foto">
-        </div>
-        <div class="recompensa-pontos1-texto1">
-            <h1 class="recompensa-pontos1-ts1">Livro extra</h1>
-        </div>
-        <div class="recompensa-pontos1-texto2">
-            <h1 class="recompensa-pontos1-ts2">Lorem ipsum dolor sit amet, consectetur. </h1>
-        </div>
-        <div class="recompensa-pontos1-texto4">
-            <h1 class="recompensa-pontos1-ts4">100 Pontos</h1>
-        </div>
-        <div class="progresso-barra">
-            <div class="progresso-label">0</div>
-        </div>
+        <img class="recompensa-pontos1-foto" src="img/Ava.svg" alt="mini-perfil-foto">
     </div>
-    <div class="recompensa-pontos2" onclick="removerPontos(44)">
-        <div class="recompensa-pontos1-image">
-            <img class="recompensa-pontos1-foto" src="/assets/img/Livros-pontos.svg" alt="recompensa-pontos1-foto">
-        </div>
-        <div class="recompensa-pontos1-texto1">
-            <h1 class="recompensa-pontos1-ts1">Tempo extra</h1>
-        </div>
-        <div class="recompensa-pontos1-texto2">
-            <h1 class="recompensa-pontos1-ts2">Lorem ipsum dolor sit amet, consectetur. </h1>
-        </div>
-        <div class="recompensa-pontos1-texto4">
-            <h1 class="recompensa-pontos1-ts4">44 Pontos</h1>
-        </div>
-        <div class="progresso-barra2">
-            <div class="progresso-label2">0</div>
-        </div>
+    <div class="recompensa-pontos2" onclick="removerPontos(100)">
+
     </div>
-    <div class="recompensa-pontos3" onclick="removerPontos(81)">
-        <div class="recompensa-pontos1-image">
-            <img class="recompensa-pontos1-foto" src="/assets/img/Desconto.svg" alt="recompensa-pontos1-foto">
-        </div>
-        <div class="recompensa-pontos1-texto1">
-            <h1 class="recompensa-pontos1-ts1">Desconto</h1>
-        </div>
-        <div class="recompensa-pontos1-texto2">
-            <h1 class="recompensa-pontos1-ts2">Lorem ipsum dolor sit amet, consectetur. </h1>
-        </div>
-        <div class="recompensa-pontos1-texto4">
-            <h1 class="recompensa-pontos1-ts4">81 Pontos</h1>
-        </div>
-        <div class="progresso-barra3">
-            <div class="progresso-label3">0</div>
-        </div>
-    </div>
-    <div>
-        <footer id="footer">
-            <img id="icon-forum" src="assets/img/icon-forum.svg" alt="">
-            <img id="icon-pontos" src="assets/img/icon-pontos.svg" alt="">
-            <img id="icon-checkin" src="assets/img/icon-checkin.svg" alt="">
-            <img id="icon-perfil" src="assets/img/icon-perfil.svg" alt="">
-            <img id="icon-sair" src="assets/img/icon-sair.svg" alt="">
-        </footer>
+    <div class="recompensa-pontos3" onclick="removerPontos(100)">
+
     </div>
 </body>
+<footer>
+    <ul id="rodape">
+        <li id="icon-forum">
+            <img src="img\icon-forum.svg" alt="">
+        </li>
+        <li id="icon-pontos">
+            <img src="img\icon-pontos.svg" alt="">
+        </li>
+        <li id="icon-checkin">
+            <img src="img\icon-checkin.svg" alt="">
+        </li>
+        <li id="icon-perfil">
+            <img src="img\icon-perfil.svg" alt="">
+        </li>
+    </ul>
+</footer>
 <script src="/assets/js/barra.js"></script>
 <script src="/assets/js/pontos.js"></script>
 <script src="/assets/js/script.js"></script>
