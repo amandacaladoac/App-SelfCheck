@@ -395,8 +395,8 @@
                 left: 28%;
                 top: 75%;
                 border: none;
-
-                background: #F7941E;
+                
+               
                 border-radius: 30px;
 
                 font-family: 'Montserrat';
@@ -408,6 +408,13 @@
                 color: #F8F8F8;
             }
 
+            #check-in-btn.disabled {
+                background-color: #f0f0f0;
+                color: #777;
+                cursor: default;
+              }
+             
+            
             .popup {
                 display: none;
                 position: absolute;

@@ -1,7 +1,7 @@
 var map;
 var targetLat = -8.05229;
 var targetLng = -34.88519;
-var targetRadius = 100; // em metros
+var targetRadius = 5; // em metros
 var checkInBtn = document.getElementById('check-in-btn');
 
 function success(pos){
@@ -25,9 +25,12 @@ function success(pos){
   // Calcula a distância entre a localização do usuário e a localização permitida
   var distance = map.distance([pos.coords.latitude, pos.coords.longitude], [targetLat, targetLng]);
 
+
   // Habilita ou desabilita o botão com base na distância
   checkInBtn.disabled = (distance > targetRadius);
-  checkInBtn.style.backgroundColor = distance > targetRadius ? "#A1A2A6" : "initial";
+  checkInBtn.style.backgroundColor = distance > targetRadius ? "#A1A2A6" : distance <= targetRadius ? "#F7941E" : "initial";
+
+  
 };
 
 function error(err){
@@ -51,3 +54,4 @@ var checkInBtnClick = function() {
 };
 
 checkInBtn.addEventListener('click', checkInBtnClick);
+
