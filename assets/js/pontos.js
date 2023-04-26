@@ -47,7 +47,7 @@ function removerPontos(quantidade) {
   }
 }
 
-document.getElementById("check-in-btn").onclick = function () {
+document.getElementById("fechar-popup").onclick = function () {
   location.href = "pontos-aluno.html";
   adicionarPontos(10);
 };

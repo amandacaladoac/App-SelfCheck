@@ -427,7 +427,7 @@
                 padding: 20px;
                 border: 1px solid #ccc;
                 border-radius: 20px;
-                z-index: 999;
+                z-index: 1000;
             }
 
             .popup img {

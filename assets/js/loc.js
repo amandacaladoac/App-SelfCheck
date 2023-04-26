@@ -47,11 +47,36 @@ var checkInBtnClick = function() {
   var distance = map.distance([pos.lat, pos.lng], [targetLat, targetLng]);
 
   if (distance <= targetRadius) {
-    alert('Check-in realizado com sucesso!');
+    // Exibe o popup de check-in concluído
+    var popup = document.getElementById('popup');
+    popup.style.display = 'block';
+
+    // Fecha o popup ao clicar no botão "Ok"
+    var fecharPopupBtn = document.getElementById('fechar-popup');
+    fecharPopupBtn.addEventListener('click', function() {
+      popup.style.display = 'none';
+    });
   } else {
     alert('Você está fora da área permitida!');
   }
 };
 
+
 checkInBtn.addEventListener('click', checkInBtnClick);
+
+
+var checkInBtn = document.getElementById('check-in-btn');
+  var popup = document.getElementById('popup');
+  var closeBtn = document.getElementById('fechar-popup');
+
+  function exibirPopup() {
+    popup.style.display = 'block';
+  }
+
+  function fecharPopup() {
+    popup.style.display = 'none';
+  }
+
+  checkInBtn.addEventListener('click', exibirPopup);
+  closeBtn.addEventListener('click', fecharPopup);
 
