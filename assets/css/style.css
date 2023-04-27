@@ -1,5 +1,15 @@
        @charset "UTF-8";
 
+       * {
+           margin: 0px;
+           padding: 0px;
+           box-sizing: border-box;
+       }
+
+       body {
+           background: #F9F9F9;
+       }
+
        /*Home*/
        #home {
            box-sizing: border-box;
@@ -115,17 +125,17 @@
        }
 
        #sobrepor {
-        position: absolute;
-        width: 75%;
-        max-width: 374px;
-        height: 350px;
-        left: 8%;
-        top: 180px;
-        background: #FFFFFF;
-        box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
-        border-radius: 20px;
-        padding: 20px;
-    }
+           position: absolute;
+           width: 75%;
+           max-width: 374px;
+           height: 350px;
+           left: 8%;
+           top: 180px;
+           background: #FFFFFF;
+           box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
+           border-radius: 20px;
+           padding: 20px;
+       }
 
 
        #foto-perfil {
@@ -276,241 +286,207 @@
            color: #FFFFFF;
        }
 
-       #footer {
-           position: absolute;
-           left: 0;
-           right: 0;
+       #rodape {
+           position: fixed;
            bottom: 0;
-
-
+           width: 100%;
+           padding: 4%;
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
            background: #004A8D;
-           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 3px 6px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.08);
        }
 
-       @media only screen and (max-width: 600px) {
-           #footer {
-               top: auto;
-               bottom: 0;
-               height: 50px;
-               position: fixed;
-               width: 100%;
-               padding: 5px;
-           }
-        }
+       #rodape li {
+           margin-top: 2%;
+           list-style-type: none;
+       }
 
        #icon-forum {
-           position: absolute;
-           width: 25px;
-           height: 25px;
-           left: 10%;
-           top: 15px;
+           margin-right: 13%;
        }
 
        #icon-pontos {
-           position: absolute;
-           left: 26%;
-           width: 25px;
-           height: 25px;
-           top: 15px;
+           margin-right: 13%;
        }
 
        #icon-checkin {
-           position: absolute;
-           left: 45%;
-           height: 25px;
-           width: 25px;
-           top: 15px;
+           margin-right: 0%;
        }
 
        #icon-perfil {
-           position: absolute;
-           width: 25.12px;
-           height: 25px;
-           left: 64%;
-           top: 15px;
-
-           border-radius: 0px;
+           margin-left: 13%;
        }
 
-       #icon-sair {
-           position: absolute;
-           width: 30px;
-           height: 30px;
-           left: 80%;
-           top: 15px;
 
-           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+       /* Check In */
+
+       @media only screen and (max-width: 600px) {
+
+           .texto-checkin2 h2 {
+               position: absolute;
+               width: 343px;
+               height: 20px;
+               left: 36px;
+               top: 10%;
+
+               font-family: 'Montserrat';
+               font-style: normal;
+               font-weight: 700;
+               font-size: 18px;
+               line-height: 20px;
+               color: #F7941E;
+           }
+
+           .texto-checkin2 h3 {
+               position: absolute;
+               width: 329px;
+               height: 20px;
+               left: 50px;
+               top: 13%;
+
+               font-family: 'Montserrat';
+               font-style: normal;
+               font-weight: 500;
+               font-size: 12px;
+               line-height: 20px;
+
+
+               color: #808080;
+           }
+
+           #mapa {
+               position: absolute;
+               height: 380px;
+               width: 330px;
+               top: 165px;
+               left: 20px;
+               border-radius: 20px;
+           }
+
+           .botao-checkin button {
+               position: absolute;
+               width: 166px;
+               height: 45px;
+               left: 28%;
+               top: 75%;
+               border: none;
+
+
+               border-radius: 30px;
+
+               font-family: 'Montserrat';
+               font-style: normal;
+               font-weight: 700;
+               font-size: 18px;
+               line-height: 20px;
+
+               color: #F8F8F8;
+           }
+
+           #check-in-btn.disabled {
+               background-color: #f0f0f0;
+               color: #777;
+               cursor: default;
+           }
+
+
+           .popup {
+               display: none;
+               position: absolute;
+               width: 335px;
+               height: 340px;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               background-color: #fff;
+               padding: 20px;
+               border: 1px solid #ccc;
+               border-radius: 20px;
+               z-index: 1000;
+           }
+
+           .popup img {
+               position: absolute;
+               left: 43%;
+               right: 41.55%;
+               top: 50px;
+               bottom: 53.79%;
+               border: none;
+           }
+
+           .popup h2 {
+               position: absolute;
+               width: 310px;
+               height: 45px;
+               left: 40px;
+               top: 150px;
+
+               font-family: 'Montserrat';
+               font-style: normal;
+               font-weight: 700;
+               font-size: 25px;
+               line-height: 20px;
+               /* or 80% */
+
+               text-align: center;
+
+               color: rgba(247, 148, 30, 0.87);
+           }
+
+           .popup h3 {
+               position: absolute;
+               width: 310px;
+               height: 45px;
+               left: 40px;
+               top: 180px;
+
+               font-family: 'Montserrat';
+               font-style: normal;
+               font-weight: 700;
+               font-size: 25px;
+               line-height: 20px;
+               /* or 80% */
+
+               text-align: center;
+
+               color: rgba(247, 148, 30, 0.87);
+           }
+
+           .popup button {
+               position: absolute;
+               width: 166px;
+               height: 45px;
+               left: 121px;
+               top: 280px;
+               border: none;
+
+               background: #F7941E;
+               border-radius: 30px;
+
+               font-family: 'Montserrat';
+               font-style: normal;
+               font-weight: 700;
+               font-size: 25px;
+               line-height: 20px;
+               /* identical to box height, or 80% */
+
+               text-align: center;
+
+               color: #F8F8F8;
+           }
        }
-
-       
-        /* Check In */
-
-        @media only screen and (max-width: 600px) {
-
-            .texto-checkin2 h2 {
-                position: absolute;
-                width: 343px;
-                height: 20px;
-                left: 36px;
-                top: 10%;
-
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 20px;
-                color: #F7941E;
-            }
-
-            .texto-checkin2 h3 {
-                position: absolute;
-                width: 329px;
-                height: 20px;
-                left: 50px;
-                top: 13%;
-
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 20px;
-
-
-                color: #808080;
-            }
-
-            #mapa {
-                position: absolute;
-                height: 380px;
-                width: 330px;
-                top: 165px; 
-                left: 20px; 
-                border-radius: 20px;
-            }
-
-            .botao-checkin button {
-                position: absolute;
-                width: 166px;
-                height: 45px;
-                left: 28%;
-                top: 75%;
-                border: none;
-                
-               
-                border-radius: 30px;
-
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 20px;
-
-                color: #F8F8F8;
-            }
-
-            #check-in-btn.disabled {
-                background-color: #f0f0f0;
-                color: #777;
-                cursor: default;
-              }
-             
-            
-            .popup {
-                display: none;
-                position: absolute;
-                width: 335px;
-                height: 340px;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background-color: #fff;
-                padding: 20px;
-                border: 1px solid #ccc;
-                border-radius: 20px;
-                z-index: 1000;
-            }
-
-            .popup img {
-                position: absolute;
-                left: 43%;
-                right: 41.55%;
-                top: 50px;
-                bottom: 53.79%;
-                border: none;
-            }
-
-            .popup h2 {
-                position: absolute;
-                width: 310px;
-                height: 45px;
-                left: 40px;
-                top: 150px;
-
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 25px;
-                line-height: 20px;
-                /* or 80% */
-
-                text-align: center;
-
-                color: rgba(247, 148, 30, 0.87);
-            }
-
-            .popup h3 {
-                position: absolute;
-                width: 310px;
-                height: 45px;
-                left: 40px;
-                top: 180px;
-
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 25px;
-                line-height: 20px;
-                /* or 80% */
-
-                text-align: center;
-
-                color: rgba(247, 148, 30, 0.87);
-            }
-
-            .popup button {
-                position: absolute;
-                width: 166px;
-                height: 45px;
-                left: 121px;
-                top: 280px;
-                border: none;
-
-                background: #F7941E;
-                border-radius: 30px;
-
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 25px;
-                line-height: 20px;
-                /* identical to box height, or 80% */
-
-                text-align: center;
-
-                color: #F8F8F8;
-            }
-        }
 
 
        /*login*/
 
        #login-file {
-        box-sizing: border-box;
-        margin: 0px;
-        padding: 0px;
-        position: relative;
-        width: 100%;
-        height: auto;
+           box-sizing: border-box;
+           margin: 0px;
+           padding: 0px;
+           position: relative;
+           width: 100%;
+           height: auto;
        }
 
        .login1 {
@@ -566,14 +542,14 @@
        }
 
        #logo-2 {
-            position: absolute;
-            width: 80%;
-            max-width: 337px;
-            height: auto;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 100px;
-            align-items: center;
+           position: absolute;
+           width: 80%;
+           max-width: 337px;
+           height: auto;
+           left: 50%;
+           transform: translateX(-50%);
+           top: 100px;
+           align-items: center;
        }
 
        .voltar {
@@ -581,309 +557,309 @@
            color: #000000;
            margin-top: 50px;
            margin-left: 10px;
-           
+
        }
-       
+
        #logo-rodape-login {
-            position: absolute;
-            width: 33px;
-            height: 21px;
-            left: 48%;
-            top: 720px;
-            padding-bottom: 0%;
-        }
+           position: absolute;
+           width: 33px;
+           height: 21px;
+           left: 48%;
+           top: 720px;
+           padding-bottom: 0%;
+       }
 
 
-            /* Pontos (Alunos) */
+       /* Pontos (Alunos) */
 
-            @media screen and (max-width: 768px) {
-                .mini-perfil {
-                    width: 362px;
-                    height: 118px;
-                    background: rgba(255, 255, 255, 1);
-                    opacity: 1;
-                    position: absolute;
-                    top: 40px;
-                    left: 7px;
-                    border-top-left-radius: 20px;
-                    border-top-right-radius: 20px;
-                    border-bottom-left-radius: 20px;
-                    border-bottom-right-radius: 20px;
-                    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
-                    overflow: hidden;
-                }
+       @media screen and (max-width: 768px) {
+           .mini-perfil {
+               width: 362px;
+               height: 118px;
+               background: rgba(255, 255, 255, 1);
+               opacity: 1;
+               position: absolute;
+               top: 40px;
+               left: 7px;
+               border-top-left-radius: 20px;
+               border-top-right-radius: 20px;
+               border-bottom-left-radius: 20px;
+               border-bottom-right-radius: 20px;
+               box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
+               overflow: hidden;
+           }
 
-                .mini-perfil-image1 {
-                    position: absolute;
-                    left: 20px;
-                    bottom: 15px;
-                }
+           .mini-perfil-image1 {
+               position: absolute;
+               left: 20px;
+               bottom: 15px;
+           }
 
-                .mini-perfil-image2 {
-                    position: absolute;
-                    left: 305px;
-                    bottom: 60px;
-                }
+           .mini-perfil-image2 {
+               position: absolute;
+               left: 305px;
+               bottom: 60px;
+           }
 
-                .mini-perfil-foto1 {
-                    width: 83px;
-                    height: 83px;
-                }
+           .mini-perfil-foto1 {
+               width: 83px;
+               height: 83px;
+           }
 
-                .mini-perfil-foto2 {
-                    width: 45px;
-                    height: 45px;
-                }
+           .mini-perfil-foto2 {
+               width: 45px;
+               height: 45px;
+           }
 
-                .mini-perfil-texto1 {
-                    position: absolute;
-                    left: 120px;
-                    bottom: 60px;
-                }
+           .mini-perfil-texto1 {
+               position: absolute;
+               left: 120px;
+               bottom: 60px;
+           }
 
-                .mini-perfil-texto2 {
-                    position: absolute;
-                    left: 120px;
-                    bottom: 45px;
-                }
+           .mini-perfil-texto2 {
+               position: absolute;
+               left: 120px;
+               bottom: 45px;
+           }
 
-                .mini-perfil-texto3 {
-                    position: absolute;
-                    left: 120px;
-                    bottom: 20px;
-                }
+           .mini-perfil-texto3 {
+               position: absolute;
+               left: 120px;
+               bottom: 20px;
+           }
 
-                .mini-perfil-id1 {
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 17px;
-                    line-height: 24px;
-                }
+           .mini-perfil-id1 {
+               font-family: 'Montserrat';
+               font-style: normal;
+               font-weight: 400;
+               font-size: 17px;
+               line-height: 24px;
+           }
 
-                .mini-perfil-id2 {
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 9px;
-                    line-height: 157.9%;
-                    color: #888888;
-                }
+           .mini-perfil-id2 {
+               font-family: 'Montserrat';
+               font-style: normal;
+               font-weight: 400;
+               font-size: 9px;
+               line-height: 157.9%;
+               color: #888888;
+           }
 
-                #pontos {
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 13px;
-                    line-height: 15px;
-                    letter-spacing: 0.05em;
-                    color: #000000;
-                }
+           #pontos {
+               font-family: 'Montserrat';
+               font-style: normal;
+               font-weight: 500;
+               font-size: 13px;
+               line-height: 15px;
+               letter-spacing: 0.05em;
+               color: #000000;
+           }
 
-                .recompensa-pontos1 {
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 359px;
-                    height: 120px;
-                    top: 200px;
-                    left: 9px;
-                    background: #FFFFFF;
-                    border: 1px solid #EAEAEA;
-                    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
-                    border-radius: 5px;
-                    overflow: hidden;
-                }
+           .recompensa-pontos1 {
+               box-sizing: border-box;
+               position: absolute;
+               width: 359px;
+               height: 120px;
+               top: 200px;
+               left: 9px;
+               background: #FFFFFF;
+               border: 1px solid #EAEAEA;
+               box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
+               border-radius: 5px;
+               overflow: hidden;
+           }
 
-                .recompensa-pontos1-image {
-                    position: absolute;
-                    left: 10px;
-                    bottom: 37px;
-                }
+           .recompensa-pontos1-image {
+               position: absolute;
+               left: 10px;
+               bottom: 37px;
+           }
 
-                .recompensa-pontos1-foto {
-                    width: 63px;
-                    height: 59px;
-                }
+           .recompensa-pontos1-foto {
+               width: 63px;
+               height: 59px;
+           }
 
-                .recompensa-pontos1-texto1 {
-                    position: absolute;
-                    width: 150px;
-                    height: 17px;
-                    left: 80px;
-                    top: 26px;
-                }
+           .recompensa-pontos1-texto1 {
+               position: absolute;
+               width: 150px;
+               height: 17px;
+               left: 80px;
+               top: 26px;
+           }
 
-                .recompensa-pontos1-ts1 {
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 14px;
-                    line-height: 17px;
-                }
+           .recompensa-pontos1-ts1 {
+               font-family: 'Montserrat';
+               font-style: normal;
+               font-weight: 700;
+               font-size: 14px;
+               line-height: 17px;
+           }
 
-                .recompensa-pontos1-foto1 {
-                    width: 380px;
-                    height: 8px;
-                }
+           .recompensa-pontos1-foto1 {
+               width: 380px;
+               height: 8px;
+           }
 
-                .recompensa-pontos2 {
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 359px;
-                    height: 120px;
-                    top: 360px;
-                    left: 9px;
-                    background: #FFFFFF;
-                    border: 1px solid #EAEAEA;
-                    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
-                    border-radius: 5px;
-                    overflow: hidden;
-                }
+           .recompensa-pontos2 {
+               box-sizing: border-box;
+               position: absolute;
+               width: 359px;
+               height: 120px;
+               top: 360px;
+               left: 9px;
+               background: #FFFFFF;
+               border: 1px solid #EAEAEA;
+               box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
+               border-radius: 5px;
+               overflow: hidden;
+           }
 
-                .recompensa-pontos1-texto2 {
-                    position: absolute;
-                    width: 315px;
-                    height: 25px;
-                    left: 80px;
-                    top: 44px;
-                }
+           .recompensa-pontos1-texto2 {
+               position: absolute;
+               width: 315px;
+               height: 25px;
+               left: 80px;
+               top: 44px;
+           }
 
-                .recompensa-pontos1-ts2 {
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 11px;
-                    line-height: 25px;
-                }
+           .recompensa-pontos1-ts2 {
+               font-family: 'Montserrat';
+               font-style: normal;
+               font-weight: 400;
+               font-size: 11px;
+               line-height: 25px;
+           }
 
-                .recompensa-pontos1-texto3 {
-                    position: absolute;
-                    width: 33px;
-                    height: 13px;
-                    left: 160px;
-                    top: 85px;
-                }
+           .recompensa-pontos1-texto3 {
+               position: absolute;
+               width: 33px;
+               height: 13px;
+               left: 160px;
+               top: 85px;
+           }
 
-                .recompensa-pontos1-ts3 {
-                    font-family: 'RocknRoll One';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 7px;
-                    line-height: 12px;
-                    letter-spacing: 0.05em;
-                    color: #000000;
-                }
+           .recompensa-pontos1-ts3 {
+               font-family: 'RocknRoll One';
+               font-style: normal;
+               font-weight: 400;
+               font-size: 7px;
+               line-height: 12px;
+               letter-spacing: 0.05em;
+               color: #000000;
+           }
 
-                .recompensa-pontos1-texto4 {
-                    position: absolute;
-                    width: 76px;
-                    height: 15px;
-                    left: 266px;
-                    top: 5px;
-                }
+           .recompensa-pontos1-texto4 {
+               position: absolute;
+               width: 76px;
+               height: 15px;
+               left: 266px;
+               top: 5px;
+           }
 
-                .recompensa-pontos1-ts4 {
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 12px;
-                    line-height: 15px;
-                    letter-spacing: 0.05em;
-                    color: #000000;
-                }
+           .recompensa-pontos1-ts4 {
+               font-family: 'Montserrat';
+               font-style: normal;
+               font-weight: 500;
+               font-size: 12px;
+               line-height: 15px;
+               letter-spacing: 0.05em;
+               color: #000000;
+           }
 
-                .recompensa-pontos3 {
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 359px;
-                    height: 120px;
-                    top: 520px;
-                    left: 9px;
-                    background: #FFFFFF;
-                    border: 1px solid #EAEAEA;
-                    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
-                    border-radius: 5px;
-                    overflow: hidden;
-                }
+           .recompensa-pontos3 {
+               box-sizing: border-box;
+               position: absolute;
+               width: 359px;
+               height: 120px;
+               top: 520px;
+               left: 9px;
+               background: #FFFFFF;
+               border: 1px solid #EAEAEA;
+               box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
+               border-radius: 5px;
+               overflow: hidden;
+           }
 
-                .progresso-barra {
-                    position: absolute;
-                    top: 92px;
-                    left: 25px;
-                    width: 300px;
-                    height: 10px;
-                    background-color: #ddd;
-                    border-radius: 10px;
-                }
+           .progresso-barra {
+               position: absolute;
+               top: 92px;
+               left: 25px;
+               width: 300px;
+               height: 10px;
+               background-color: #ddd;
+               border-radius: 10px;
+           }
 
-                .progresso-barra div {
-                    height: 100%;
-                    text-align: right;
-                    padding: 0 10px;
-                    line-height: 10px;
-                    width: 0;
-                    background-color: #4caf50;
-                    color: white;
-                    border-radius: 10px;
-                }
+           .progresso-barra div {
+               height: 100%;
+               text-align: right;
+               padding: 0 10px;
+               line-height: 10px;
+               width: 0;
+               background-color: #4caf50;
+               color: white;
+               border-radius: 10px;
+           }
 
-                .progresso-label {
-                    font-size: 11px;
-                    text-align: center;
-                }
+           .progresso-label {
+               font-size: 11px;
+               text-align: center;
+           }
 
-                .progresso-barra2 {
-                    position: absolute;
-                    top: 92px;
-                    left: 25px;
-                    width: 300px;
-                    height: 10px;
-                    background-color: #ddd;
-                    border-radius: 10px;
-                }
+           .progresso-barra2 {
+               position: absolute;
+               top: 92px;
+               left: 25px;
+               width: 300px;
+               height: 10px;
+               background-color: #ddd;
+               border-radius: 10px;
+           }
 
-                .progresso-barra2 div {
-                    height: 100%;
-                    text-align: right;
-                    padding: 0 10px;
-                    line-height: 10px;
-                    width: 0;
-                    background-color: #4caf50;
-                    color: white;
-                    border-radius: 10px;
-                }
+           .progresso-barra2 div {
+               height: 100%;
+               text-align: right;
+               padding: 0 10px;
+               line-height: 10px;
+               width: 0;
+               background-color: #4caf50;
+               color: white;
+               border-radius: 10px;
+           }
 
-                .progresso-label2 {
-                    font-size: 11px;
-                    text-align: center;
-                }
+           .progresso-label2 {
+               font-size: 11px;
+               text-align: center;
+           }
 
-                .progresso-barra3 {
-                    position: absolute;
-                    top: 92px;
-                    left: 25px;
-                    width: 300px;
-                    height: 10px;
-                    background-color: #ddd;
-                    border-radius: 10px;
-                }
+           .progresso-barra3 {
+               position: absolute;
+               top: 92px;
+               left: 25px;
+               width: 300px;
+               height: 10px;
+               background-color: #ddd;
+               border-radius: 10px;
+           }
 
-                .progresso-barra3 div {
-                    height: 100%;
-                    text-align: right;
-                    padding: 0 10px;
-                    line-height: 10px;
-                    width: 0;
-                    background-color: #4caf50;
-                    color: white;
-                    border-radius: 10px;
-                }
+           .progresso-barra3 div {
+               height: 100%;
+               text-align: right;
+               padding: 0 10px;
+               line-height: 10px;
+               width: 0;
+               background-color: #4caf50;
+               color: white;
+               border-radius: 10px;
+           }
 
-                .progresso-label3 {
-                    font-size: 11px;
-                    text-align: center;
-                }
-            }
+           .progresso-label3 {
+               font-size: 11px;
+               text-align: center;
+           }
+       }
 
        /* Cadastro */
 
@@ -1038,276 +1014,276 @@
 
        @media only screen and (max-width: 600px) {
 
-        .perfil-criar-post {
-            width: 400px;
-            height: 118px;
-            background: #004A8D;
-            opacity: 1;
-            position: absolute;
-            top: 40px;
-            left: 7px;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-            box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
-            overflow: hidden;
-        }
+           .perfil-criar-post {
+               width: 400px;
+               height: 118px;
+               background: #004A8D;
+               opacity: 1;
+               position: absolute;
+               top: 40px;
+               left: 7px;
+               border-top-left-radius: 20px;
+               border-top-right-radius: 20px;
+               border-bottom-left-radius: 20px;
+               border-bottom-right-radius: 20px;
+               box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
+               overflow: hidden;
+           }
 
-        .criar-post-image1 {
-            position: absolute;
-            left: 9px;
-            bottom: 15px;
-        }
+           .criar-post-image1 {
+               position: absolute;
+               left: 9px;
+               bottom: 15px;
+           }
 
-        .criar-post-foto1 {
-            width: 50px;
-            height: 83px;
-        }
+           .criar-post-foto1 {
+               width: 50px;
+               height: 83px;
+           }
 
-        .campo-texto {
-            padding: 10px;
-            gap: 10px;
-            border-radius: 40px;
-            border: px solid #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            width: 200px;
-            height: 40px;
-            margin: 30px 70px;
-            font-family: 'Montserrat' sans-serif;
+           .campo-texto {
+               padding: 10px;
+               gap: 10px;
+               border-radius: 40px;
+               border: px solid #fff;
+               box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+               background-color: #fff;
+               width: 200px;
+               height: 40px;
+               margin: 30px 70px;
+               font-family: 'Montserrat' sans-serif;
 
-        }
+           }
 
-        .campo-texto textarea {
-            width: 200px;
-            height: 34px;
-            resize: none;
-            border-radius: 15px;
-            border-top: 1px solid #ffffff;
-            border-bottom: 1px solid #ffffff;
-            border-left: 1px solid #ffffff;
-            border-right: 1px solid #ffffff;
-            outline: none;
-            font-family: 'Montserrat' sans-serif;
-        }
-
-
-        .btn-post {
-            position: absolute;
-            width: 90px;
-            height: 50px;
-            left: 300px;
-            top: 7px;
-            margin: 30px auto;
-            background: #FF6934;
-            border-radius: 40px;
-            color: #fff;
-            border: none;
-        }
-
-        #messages {
-            font-family: 'Montserrat' sans-serif;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 16px;
-            display: flex;
-            align-items: center;
-            letter-spacing: 0.05em;
-
-            color: #000000;
-        }
+           .campo-texto textarea {
+               width: 200px;
+               height: 34px;
+               resize: none;
+               border-radius: 15px;
+               border-top: 1px solid #ffffff;
+               border-bottom: 1px solid #ffffff;
+               border-left: 1px solid #ffffff;
+               border-right: 1px solid #ffffff;
+               outline: none;
+               font-family: 'Montserrat' sans-serif;
+           }
 
 
+           .btn-post {
+               position: absolute;
+               width: 90px;
+               height: 50px;
+               left: 300px;
+               top: 7px;
+               margin: 30px auto;
+               background: #FF6934;
+               border-radius: 40px;
+               color: #fff;
+               border: none;
+           }
 
-        .relogio-forum {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            left: 80px;
-            top: 190px;
-            color: #808080;
-        }
+           #messages {
+               font-family: 'Montserrat' sans-serif;
+               font-style: normal;
+               font-weight: 700;
+               font-size: 14px;
+               line-height: 16px;
+               display: flex;
+               align-items: center;
+               letter-spacing: 0.05em;
 
-        .p1 {
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            left: 108px;
-            top: 176px;
-            color: #808080;
-        }
+               color: #000000;
+           }
 
-        .setad-forum {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            left: 160px;
-            top: 191px;
-            color: #808080;
-        }
 
-        .p2 {
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            left: 185px;
-            top: 176px;
-            color: #808080;
-        }
 
-        .caixa-forum {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            left: 230px;
-            top: 191px;
-            color: #808080;
-        }
+           .relogio-forum {
+               position: absolute;
+               width: 20px;
+               height: 20px;
+               left: 80px;
+               top: 190px;
+               color: #808080;
+           }
 
-        .p3 {
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            left: 260px;
-            top: 176px;
-            color: #808080;
-        }
+           .p1 {
+               position: absolute;
+               width: 15px;
+               height: 15px;
+               left: 108px;
+               top: 176px;
+               color: #808080;
+           }
 
-        .messages {
-            box-sizing: border-box;
-            position: absolute;
-            width: 381px;
-            height: 130px;
-            top: 240px;
-            left: 9px;
-            background: #FFFFFF;
-            border: 1px solid #EAEAEA;
-            box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
-            border-radius: 5px;
-            overflow: hidden;
-            font-family: 'Montserrat' sans-serif;
+           .setad-forum {
+               position: absolute;
+               width: 20px;
+               height: 20px;
+               left: 160px;
+               top: 191px;
+               color: #808080;
+           }
 
-        }
+           .p2 {
+               position: absolute;
+               width: 15px;
+               height: 15px;
+               left: 185px;
+               top: 176px;
+               color: #808080;
+           }
 
-        .img2-forum-perfil {
-            position: absolute;
-            left: 9px;
-            bottom: 55px;
-        }
+           .caixa-forum {
+               position: absolute;
+               width: 20px;
+               height: 20px;
+               left: 230px;
+               top: 191px;
+               color: #808080;
+           }
 
-        .foto2-forum-perfil {
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-        }
+           .p3 {
+               position: absolute;
+               width: 15px;
+               height: 15px;
+               left: 260px;
+               top: 176px;
+               color: #808080;
+           }
 
-        .palavras-forum h2 {
-            position: absolute;
-            width: 110px;
-            height: 15px;
-            left: 75px;
-            top: 9px;
+           .messages {
+               box-sizing: border-box;
+               position: absolute;
+               width: 381px;
+               height: 130px;
+               top: 240px;
+               left: 9px;
+               background: #FFFFFF;
+               border: 1px solid #EAEAEA;
+               box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
+               border-radius: 5px;
+               overflow: hidden;
+               font-family: 'Montserrat' sans-serif;
 
-            font-family: 'Montserrat' sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 13px;
-            line-height: 15px;
-            display: flex;
-            align-items: center;
-            letter-spacing: 0.05em;
+           }
 
-            color: #000000;
-        }
+           .img2-forum-perfil {
+               position: absolute;
+               left: 9px;
+               bottom: 55px;
+           }
 
-        .palavras-forum p {
-            position: absolute;
-            width: 81px;
-            height: 25px;
-            left: 75px;
-            top: 20px;
+           .foto2-forum-perfil {
+               width: 55px;
+               height: 55px;
+               border-radius: 50%;
+           }
 
-            font-family: 'Montserrat' sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 10px;
-            line-height: 12px;
-            display: flex;
-            align-items: center;
-            letter-spacing: 0.05em;
+           .palavras-forum h2 {
+               position: absolute;
+               width: 110px;
+               height: 15px;
+               left: 75px;
+               top: 9px;
 
-            /* Subtitle text color */
+               font-family: 'Montserrat' sans-serif;
+               font-style: normal;
+               font-weight: 400;
+               font-size: 13px;
+               line-height: 15px;
+               display: flex;
+               align-items: center;
+               letter-spacing: 0.05em;
 
-            color: #808080;
-        }
+               color: #000000;
+           }
 
-        .palavras-forum h1 {
-            position: absolute;
-            width: 270xpx;
-            height: 20px;
-            left: 70px;
-            top: 50px;
+           .palavras-forum p {
+               position: absolute;
+               width: 81px;
+               height: 25px;
+               left: 75px;
+               top: 20px;
 
-            font-family: 'Montserrat' sans-serif;
-            font-style: normal;
-            font-weight: 750;
-            font-size: 18px;
-            line-height: 16px;
-            display: flex;
-            align-items: center;
-            letter-spacing: 0.05em;
+               font-family: 'Montserrat' sans-serif;
+               font-style: normal;
+               font-weight: 400;
+               font-size: 10px;
+               line-height: 12px;
+               display: flex;
+               align-items: center;
+               letter-spacing: 0.05em;
 
-            color: #000000;
-        }
+               /* Subtitle text color */
 
-        .olho-forum {
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            left: 210px;
-            top: 5px;
+               color: #808080;
+           }
 
-        }
+           .palavras-forum h1 {
+               position: absolute;
+               width: 270xpx;
+               height: 20px;
+               left: 70px;
+               top: 50px;
 
-        .batep-forum {
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            left: 270px;
-            top: 5px;
-        }
+               font-family: 'Montserrat' sans-serif;
+               font-style: normal;
+               font-weight: 750;
+               font-size: 18px;
+               line-height: 16px;
+               display: flex;
+               align-items: center;
+               letter-spacing: 0.05em;
 
-        .seta-forum {
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            left: 320px;
-            top: 5px;
-        }
+               color: #000000;
+           }
 
-        .p4 {
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            left: 230px;
-            top: -8px;
-        }
+           .olho-forum {
+               position: absolute;
+               width: 15px;
+               height: 15px;
+               left: 210px;
+               top: 5px;
 
-        .p5 {
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            left: 290px;
-            top: -8px;
-        }
+           }
 
-        .p6 {
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            left: 335px;
-            top: -8px;
-        }
-    }
+           .batep-forum {
+               position: absolute;
+               width: 15px;
+               height: 15px;
+               left: 270px;
+               top: 5px;
+           }
+
+           .seta-forum {
+               position: absolute;
+               width: 15px;
+               height: 15px;
+               left: 320px;
+               top: 5px;
+           }
+
+           .p4 {
+               position: absolute;
+               width: 15px;
+               height: 15px;
+               left: 230px;
+               top: -8px;
+           }
+
+           .p5 {
+               position: absolute;
+               width: 15px;
+               height: 15px;
+               left: 290px;
+               top: -8px;
+           }
+
+           .p6 {
+               position: absolute;
+               width: 15px;
+               height: 15px;
+               left: 335px;
+               top: -8px;
+           }
+       }
