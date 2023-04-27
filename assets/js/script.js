@@ -39,3 +39,5 @@ document.getElementById("icon-perfil").onclick = function () {
 document.getElementById("icon-sair").onclick = function () {
   location.href = "index.html";
 };
+
+
