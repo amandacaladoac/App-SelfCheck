@@ -66,11 +66,11 @@ body {
 
 .recompensa-pontos1 {
     position: fixed;
-    box-sizing: border-box;
     display: flex;
+    align-items: center;
     width: 90%;
-    padding: 7%;
-    margin-top: 47%;
+    padding: 15%;
+    margin-top: 44%;
     margin-left: 5%;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
@@ -78,24 +78,38 @@ body {
     border-radius: 5px;
 }
 
+.recompensa-pontos1-ts1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+
 .recompensa-pontos1-texto1 {
-    margin-left: 4%;
+    position: absolute;
+    margin-bottom: 12%;
+    margin-left: 8%;
+}
+
+.recompensa-pontos1-image {
+    position: absolute;
+    margin-left: -14%;
+    margin-top: -3%;
 }
 
 .recompensa-pontos1-foto {
     width: 63px;
     height: 59px;
-    margin-left: -6%;
-    margin-top: -2%;
 }
 
 .recompensa-pontos2 {
     position: fixed;
-    box-sizing: border-box;
     display: flex;
+    align-items: center;
     width: 90%;
-    padding: 13%;
-    margin-top: 85%;
+    padding: 15%;
+    margin-top: 84%;
     margin-left: 5%;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
@@ -103,18 +117,130 @@ body {
     border-radius: 5px;
 }
 
+.recompensa-pontos1-ts2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 25px;
+}
+
+
+.recompensa-pontos1-texto2 {
+    position: absolute;
+    margin-bottom: -2%;
+    margin-left: 8%;
+}
+
+
 .recompensa-pontos3 {
     position: fixed;
-    box-sizing: border-box;
     display: flex;
+    align-items: center;
     width: 90%;
-    padding: 13%;
-    margin-top: 125%;
+    padding: 15%;
+    margin-top: 123%;
     margin-left: 5%;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
     box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
+}
+
+.recompensa-pontos1-texto4 {
+    position: absolute;
+    width: 76px;
+    height: 15px;
+    margin-bottom: 24%;
+    margin-left: 57%;
+}
+
+.progresso-barra {
+    position: absolute;
+    margin-bottom: -23%;
+    margin-left: -11%;
+    width: 300px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.progresso-barra div {
+    height: 100%;
+    text-align: right;
+    padding: 0 10px;
+    line-height: 10px;
+    width: 0;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 10px;
+}
+
+.progresso-label {
+    font-size: 11px;
+    text-align: center;
+}
+
+.progresso-barra2 {
+    position: absolute;
+    margin-bottom: -23%;
+    margin-left: -11%;
+    width: 300px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.progresso-barra2 div {
+    height: 100%;
+    text-align: right;
+    padding: 0 10px;
+    line-height: 10px;
+    width: 0;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 10px;
+}
+
+.progresso-label2 {
+    font-size: 11px;
+    text-align: center;
+}
+
+.progresso-barra3 {
+    position: absolute;
+    margin-bottom: -23%;
+    margin-left: -11%;
+    width: 300px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.progresso-barra3 div {
+    height: 100%;
+    text-align: right;
+    padding: 0 10px;
+    line-height: 10px;
+    width: 0;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 10px;
+}
+
+.progresso-label3 {
+    font-size: 11px;
+    text-align: center;
+}
+
+.recompensa-pontos1-ts4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    color: #000000;
 }
 
 #pontos {
