@@ -1,8 +1,11 @@
 var map;
 var targetLat = -8.05229;
 var targetLng = -34.88519;
-var targetRadius = 50; // em metros
+var targetRadius = 5; // em metros
 var checkInBtn = document.getElementById('check-in-btn');
+
+// Declara uma variável global para o marcador
+var marker;
 
 function success(pos){
   console.log(pos.coords.latitude, pos.coords.longitude);
@@ -14,13 +17,15 @@ function success(pos){
       attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
       maxZoom: 18,
     }).addTo(map);
-  } else {
-    map.setView([pos.coords.latitude, pos.coords.longitude], 22);
-  }
 
-  L.marker([pos.coords.latitude, pos.coords.longitude]).addTo(map)
-    .bindPopup('Eu estou aqui!')
-    .openPopup();
+    // Adiciona o marcador ao mapa
+    marker = L.marker([pos.coords.latitude, pos.coords.longitude]).addTo(map)
+      .bindPopup('Eu estou aqui!')
+      .openPopup();
+  } else {
+    // Atualiza a posição do marcador
+    marker.setLatLng([pos.coords.latitude, pos.coords.longitude]);
+  }
 
   // Calcula a distância entre a localização do usuário e a localização permitida
   var distance = map.distance([pos.coords.latitude, pos.coords.longitude], [targetLat, targetLng]);
@@ -29,8 +34,6 @@ function success(pos){
   // Habilita ou desabilita o botão com base na distância
   checkInBtn.disabled = (distance > targetRadius);
   checkInBtn.style.backgroundColor = distance > targetRadius ? "#A1A2A6" : distance <= targetRadius ? "#F7941E" : "initial";
-
-  
 };
 
 function error(err){
@@ -66,17 +69,16 @@ checkInBtn.addEventListener('click', checkInBtnClick);
 
 
 var checkInBtn = document.getElementById('check-in-btn');
-  var popup = document.getElementById('popup');
-  var closeBtn = document.getElementById('fechar-popup');
+var popup = document.getElementById('popup');
+var closeBtn = document.getElementById('fechar-popup');
 
-  function exibirPopup() {
-    popup.style.display = 'block';
-  }
+function exibirPopup() {
+  popup.style.display = 'block';
+}
 
-  function fecharPopup() {
-    popup.style.display = 'none';
-  }
+function fecharPopup() {
+  popup.style.display = 'none';
+}
 
-  checkInBtn.addEventListener('click', exibirPopup);
-  closeBtn.addEventListener('click', fecharPopup);
-
+checkInBtn.addEventListener('click', exibirPopup);
+closeBtn.addEventListener('click', fecharPopup);
