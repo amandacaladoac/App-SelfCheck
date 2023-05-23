@@ -18,6 +18,14 @@ function newpage(){
    location.href = "login.html";
 }
 
+function redirectToCadastro() {
+  window.location.href = "cadastro.html";
+}
+
+function redirectToLogin() {
+  window.location.href = "login.html";
+}
+
 
 
  document.getElementById("icon-forum").onclick = function () {

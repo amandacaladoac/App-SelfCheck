@@ -94,12 +94,11 @@
        }
 
        #logo-rodape {
-           position: absolute;
-           width: 33px;
-           height: 21px;
-           left: 45%;
-           top: 720px;
-           padding-bottom: 0%;
+        position: absolute;
+        left: 50%;
+        top: 650px;
+        padding-bottom: 0%;
+        transform: translateX(-50%) translateY(-50%);
        }
 
        /* Perfil */
@@ -490,10 +489,10 @@
        }
 
        .login1 {
-           position: relative;
-           left: 38px;
-           top: 270px;
-
+        position: absolute;
+        left: 50%;
+        top: 800%;
+        transform: translateX(-50%) translateY(-50%);
        }
 
 
@@ -501,11 +500,12 @@
            position: absolute;
            width: 247px;
            height: 60px;
-           left: 20%;
+           left: 50%;
            top: 520px;
            background: #004A8D;
            border-radius: 30px;
            border: none;
+           transform: translateX(-50%) translateY(-50%);
        }
 
        .loginbtt2 {
@@ -522,11 +522,12 @@
            position: absolute;
            width: 247px;
            height: 60px;
-           left: 20%;
+           left: 50%;
            top: 600px;
            background: #F7941E;
            border-radius: 30px;
            border: none;
+           transform: translateX(-50%) translateY(-50%);
        }
 
        .cadastrobtt2 {
@@ -547,26 +548,26 @@
            max-width: 337px;
            height: auto;
            left: 50%;
-           transform: translateX(-50%);
-           top: 100px;
+           transform: translateX(-50%) translateY(-50%);
+           top: 380%;
            align-items: center;
        }
 
        .voltar {
            text-decoration: none;
            color: #000000;
-           margin-top: 50px;
-           margin-left: 10px;
-
+           top: 50%;
+           transform: translateX(-50%) translateY(-50%);
        }
 
        #logo-rodape-login {
-           position: absolute;
-           width: 33px;
-           height: 21px;
-           left: 48%;
-           top: 720px;
-           padding-bottom: 0%;
+        position: absolute;
+        width: 33px;
+        height: 21px;
+        left: 50%;
+        top: 700px;
+        padding-bottom: 0%;
+        transform: translateX(-50%) translateY(-50%);
        }
 
 
@@ -863,47 +864,38 @@
 
        /* Cadastro */
 
-       input[type="radio"] {
-           display: none;
-       }
-
-       .button {
-           position: relative;
-           font-family: 'Montserrat';
-           font-style: normal;
-           font-weight: 500;
-           border: 2px solid rgba(128, 128, 128, 0.53);
-           border-radius: 8px;
-           padding: 10px 30px;
-           align-items: center;
-           cursor: pointer;
-           top: 260px;
-       }
-
-       input[type="radio"]:checked+.button {
-           border: 2px solid rgba(0, 74, 141, 1);
-       }
-
-       .op {
-           left: 55px;
+       #logo3 {
+        position: absolute;
+        left: 50%;
+        top: 10rem;
+        transform: translateX(-50%) translateY(-50%);
        }
 
        .cadastrobtt-2 {
            position: absolute;
            width: 247px;
            height: 60px;
-           left: 77px;
-           top: 660px;
+           left: 50%;
+           transform: translateX(-50%) translateY(-50%);
+           top: 700px;
            background: #F7941E;
            border-radius: 30px;
            border: none;
        }
 
-       .login2 {
-           position: relative;
-           left: 55px;
-           top: -50px;
+       #logo-rodape-cadastro{
+        position: absolute;
+        left: 50%;
+        top: 770px;
+        padding-bottom: 0%;
+        transform: translateX(-50%) translateY(-50%);
+       }
 
+       .login2 {
+           position: absolute;
+           left: 50%;
+           transform: translateX(-50%) translateY(-50%);
+           top: 150px;
        }
 
        .check {
@@ -919,6 +911,8 @@
            left: 150px;
            top: 600px;
        }
+
+       /* Check in */
 
        .camera {
            top: -50px
