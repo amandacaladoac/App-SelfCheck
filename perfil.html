@@ -24,17 +24,25 @@
             <img id="foto-perfil" src="assets/img/foto-perfil.svg" alt="">
         </div>
         <div>
-            <img id="icon-edit" src="assets/img/icon-edit.svg" alt="">
-
-            <h3 id="nome-usuario-perfil">Nome do usuário</h3>
-            <h4 id="email-usuario-perfil">email do usuário</h4>
-
-            <img id="icon-checkin2" src="assets/img/icon-checkin2.svg" alt="">
-            <h4 id="check-ins">Check-ins</h4>
-            <img id="icon-posts" src="assets/img/icon-posts.svg" alt="">
-            <h4 id="posts">Post's</h4>
-            <img id="icon-phone" src="assets/img/icon-phone.svg" alt="">
-            <h4 id="telefone">Telefone</h4>
+            <ul id="corpo">
+                <li>
+                    <img id="icon-edit" src="assets/img/icon-edit.svg" alt="">
+                </li>
+                <li class="tes01">
+                    <img id="icon-checkin2" src="assets/img/icon-checkin2.svg" alt="">
+                    <h4 id="check-ins">Check-ins</h4>
+                </li>
+                <li>
+                    <img id="icon-phone" src="img/Vector.svg" alt="">
+                    <h4 id="telefone"><span id="pontos"></span></h4>
+                </li>
+                <li>
+                    <h3 id="nome-usuario-perfil">Nome do usuário</h3>
+                </li>
+                <li>
+                    <h4 id="email-usuario-perfil">email do usuário</h4>
+                </li>
+            </ul>
         </div>
 
         <button id="button-sair-perfil">Sair</button>
@@ -60,5 +68,10 @@
     </div>
 
 </body>
+<script src="/assets/js/barra.js"></script>
+<script src="/assets/js/pontos.js"></script>
 <script src="/assets/js/script.js"></script>
+<script>
+    atualizarPontos();
+</script>
 </html>
