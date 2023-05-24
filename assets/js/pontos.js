@@ -22,22 +22,6 @@ function adicionarPontos(quantidade) {
 }
 
 function removerPontos(quantidade) {
-  if (pontos > 0) {
-    pontos = Math.max(parseFloat(pontos) - quantidade, 0);
-    salvarPontos();
-    atualizarPontos();
-  }
-}
-
-function atualizarPontos() {
-  let pontosElemento = document.getElementById("pontos");
-  pontosElemento.innerHTML = pontos;
-  updateProgress(pontos);
-  updateProgress2(pontos);
-  updateProgress3(pontos);
-}
-
-function removerPontos(quantidade) {
   if (pontos >= quantidade) {
     pontos = parseFloat(pontos) - quantidade;
     salvarPontos();
@@ -46,6 +30,49 @@ function removerPontos(quantidade) {
     alert('Saldo insuficiente! ;(');
   }
 }
+
+function atualizarPontos() {
+  let pontosElemento = document.getElementById("pontos");
+  pontosElemento.innerHTML = pontos;
+  updateProgress1(pontos);
+  updateProgress2(pontos);
+  updateProgress3(pontos);
+}
+
+function updateProgress1(points) {
+  var progressBar = document.querySelector('.recompensa-pontos1 .progresso-barra div');
+  var progressLabel = document.querySelector('.recompensa-pontos1 .progresso-label');
+  var totalPoints = 40;
+  var progressPercent = (points / totalPoints) * 100;
+  progressPercent = Math.min(progressPercent, 100);
+  progressBar.style.width = progressPercent.toFixed(0) + '%';
+  progressLabel.textContent = progressPercent.toFixed(0) + '%';
+}
+
+function updateProgress2(points) {
+  var progressBar = document.querySelector('.recompensa-pontos2 .progresso-barra2 div');
+  var progressLabel = document.querySelector('.recompensa-pontos2 .progresso-label2');
+  var totalPoints = 60;
+  var progressPercent = (points / totalPoints) * 100;
+  progressPercent = Math.min(progressPercent, 100);
+  progressBar.style.width = progressPercent.toFixed(0) + '%';
+  progressLabel.textContent = progressPercent.toFixed(0) + '%';
+}
+
+function updateProgress3(points) {
+  var progressBar = document.querySelector('.recompensa-pontos3 .progresso-barra3 div');
+  var progressLabel = document.querySelector('.recompensa-pontos3 .progresso-label3');
+  var totalPoints = 100;
+  var progressPercent = (points / totalPoints) * 100;
+  progressPercent = Math.min(progressPercent, 100);
+  progressBar.style.width = progressPercent.toFixed(0) + '%';
+  progressLabel.textContent = progressPercent.toFixed(0) + '%';
+}
+
+
+
+inicializarPontos();
+
 
 document.getElementById("fechar-popup").onclick = function () {
   location.href = "pontos-aluno.html";
