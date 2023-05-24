@@ -338,9 +338,9 @@
 
            .texto-checkin2 h2 {
                position: absolute;
-               width: 343px;
-               height: 20px;
-               left: 36px;
+               width: 20rem;
+               left: 54%;
+               transform: translateX(-50%) translateY(-50%);
                top: 10%;
 
                font-family: 'Montserrat';
@@ -353,9 +353,9 @@
 
            .texto-checkin2 h3 {
                position: absolute;
-               width: 329px;
-               height: 20px;
-               left: 50px;
+               width: 20rem;
+               left: 56%;
+               transform: translateX(-50%) translateY(-50%);
                top: 13%;
 
                font-family: 'Montserrat';
@@ -372,8 +372,9 @@
                position: absolute;
                height: 380px;
                width: 330px;
-               top: 165px;
-               left: 20px;
+               top: 45%;
+               left: 50%;
+               transform: translateX(-50%) translateY(-50%);
                border-radius: 20px;
            }
 
@@ -381,8 +382,9 @@
                position: absolute;
                width: 166px;
                height: 45px;
-               left: 28%;
-               top: 75%;
+               left: 50%;
+               transform: translateX(-50%) translateY(-50%);
+               top: 80%;
                border: none;
 
 

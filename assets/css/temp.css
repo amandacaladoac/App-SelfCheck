@@ -68,6 +68,7 @@ body {
     position: fixed;
     display: flex;
     align-items: center;
+    font-family: 'Montserrat';
     width: 90%;
     padding: 15%;
     margin-top: 44%;
@@ -107,6 +108,7 @@ body {
     position: fixed;
     display: flex;
     align-items: center;
+    font-family: 'Montserrat';
     width: 90%;
     padding: 15%;
     margin-top: 84%;
@@ -137,6 +139,7 @@ body {
     position: fixed;
     display: flex;
     align-items: center;
+    font-family: 'Montserrat';
     width: 90%;
     padding: 15%;
     margin-top: 123%;
