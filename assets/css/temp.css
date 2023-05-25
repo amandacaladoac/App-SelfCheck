@@ -34,6 +34,7 @@ body {
 }
 
 .mini-perfil-id2 {
+    margin-bottom: 6px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -246,6 +247,55 @@ body {
     color: #000000;
 }
 
+.recompensa-pontos4 {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+    width: 90%;
+    padding: 15%;
+    margin-top: 159%;
+    margin-left: 5%;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.recompensa-pontos1-texto4 {
+    position: absolute;
+    width: 76px;
+    height: 15px;
+    margin-bottom: 24%;
+    margin-left: 57%;
+}
+
+.progresso-barra4 {
+    position: absolute;
+    margin-bottom: -23%;
+    margin-left: -11%;
+    width: 300px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.progresso-barra4 div {
+    height: 100%;
+    text-align: right;
+    padding: 0 10px;
+    line-height: 10px;
+    width: 0;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 10px;
+}
+
+.progresso-label4 {
+    font-size: 11px;
+    text-align: center;
+}
+
 #rodape {
     position: fixed;
     bottom: 0;
@@ -255,6 +305,10 @@ body {
     flex-direction: row;
     justify-content: center;
     background: #004A8D;
+}
+
+#pontos{
+    font-family: 'Montserrat';
 }
 
 #rodape li {
