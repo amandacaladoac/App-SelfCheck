@@ -369,14 +369,14 @@
            }
 
            #mapa {
-               position: absolute;
-               height: 380px;
-               width: 330px;
-               top: 45%;
-               left: 50%;
-               transform: translateX(-50%) translateY(-50%);
-               border-radius: 20px;
-           }
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            border-radius: 20px;
+        }
+        
 
            .botao-checkin button {
                position: absolute;
