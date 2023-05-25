@@ -94,11 +94,11 @@
        }
 
        #logo-rodape {
-        position: absolute;
-        left: 50%;
-        top: 650px;
-        padding-bottom: 0%;
-        transform: translateX(-50%) translateY(-50%);
+           position: absolute;
+           left: 50%;
+           top: 650px;
+           padding-bottom: 0%;
+           transform: translateX(-50%) translateY(-50%);
        }
 
        /* Perfil */
@@ -271,8 +271,8 @@
        }
 
        .test {
-        left: 50%;
-        transform: translate(-50%, -50%);
+           left: 50%;
+           transform: translate(-50%, -50%);
        }
 
        #button-sair-perfil {
@@ -306,9 +306,9 @@
        }
 
        #corpo li {
-        margin-top: 2%;
-        list-style-type: none;
-    }
+           margin-top: 2%;
+           list-style-type: none;
+       }
 
        #rodape li {
            margin-top: 2%;
@@ -336,47 +336,15 @@
 
        @media only screen and (max-width: 600px) {
 
-           .texto-checkin2 h2 {
-               position: absolute;
-               width: 20rem;
-               left: 54%;
-               transform: translateX(-50%) translateY(-50%);
-               top: 10%;
-
-               font-family: 'Montserrat';
-               font-style: normal;
-               font-weight: 700;
-               font-size: 18px;
-               line-height: 20px;
-               color: #F7941E;
-           }
-
-           .texto-checkin2 h3 {
-               position: absolute;
-               width: 20rem;
-               left: 56%;
-               transform: translateX(-50%) translateY(-50%);
-               top: 13%;
-
-               font-family: 'Montserrat';
-               font-style: normal;
-               font-weight: 500;
-               font-size: 12px;
-               line-height: 20px;
-
-
-               color: #808080;
-           }
-
            #mapa {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100vh;
-            width: 100vw;
-            border-radius: 20px;
-        }
-        
+               position: fixed;
+               top: 0;
+               left: 0;
+               height: 100vh;
+               width: 100vw;
+               border-radius: 20px;
+           }
+
 
            .botao-checkin button {
                position: absolute;
@@ -386,20 +354,16 @@
                transform: translateX(-50%) translateY(-50%);
                top: 80%;
                border: none;
-
-
                border-radius: 30px;
-
                font-family: 'Montserrat';
                font-style: normal;
                font-weight: 700;
                font-size: 18px;
                line-height: 20px;
-
                color: #F8F8F8;
            }
 
-           #check-in-btn.disabled {
+           .botao-checkin.disabled {
                background-color: #f0f0f0;
                color: #777;
                cursor: default;
@@ -505,10 +469,10 @@
        }
 
        .login1 {
-        position: absolute;
-        left: 50%;
-        top: 800%;
-        transform: translateX(-50%) translateY(-50%);
+           position: absolute;
+           left: 50%;
+           top: 100%;
+           transform: translateX(-50%) translateY(-50%);
        }
 
 
@@ -577,13 +541,38 @@
        }
 
        #logo-rodape-login {
-        position: absolute;
-        width: 33px;
-        height: 21px;
-        left: 50%;
-        top: 700px;
-        padding-bottom: 0%;
-        transform: translateX(-50%) translateY(-50%);
+           position: absolute;
+           width: 33px;
+           height: 21px;
+           left: 50%;
+           top: 700px;
+           padding-bottom: 0%;
+           transform: translateX(-50%) translateY(-50%);
+       }
+
+       /* Avaliações */
+
+       .avaliacoes {
+           box-sizing: border-box;
+           margin: 0px;
+           padding: 0px;
+           position: relative;
+           width: 100%;
+           height: auto;
+       }
+
+       #assunto {
+           position: absolute;
+           left: 50%;
+           top: 50%;
+           transform: translateX(-50%) translateY(-50%);
+       }
+
+       #mensagem {
+           position: absolute;
+           left: 50%;
+           top: 100%;
+           transform: translateX(-50%) translateY(-50%);
        }
 
 
@@ -881,10 +870,10 @@
        /* Cadastro */
 
        #logo3 {
-        position: absolute;
-        left: 50%;
-        top: 10rem;
-        transform: translateX(-50%) translateY(-50%);
+           position: absolute;
+           left: 50%;
+           top: 10rem;
+           transform: translateX(-50%) translateY(-50%);
        }
 
        .cadastrobtt-2 {
@@ -899,12 +888,12 @@
            border: none;
        }
 
-       #logo-rodape-cadastro{
-        position: absolute;
-        left: 50%;
-        top: 770px;
-        padding-bottom: 0%;
-        transform: translateX(-50%) translateY(-50%);
+       #logo-rodape-cadastro {
+           position: absolute;
+           left: 50%;
+           top: 770px;
+           padding-bottom: 0%;
+           transform: translateX(-50%) translateY(-50%);
        }
 
        .login2 {
