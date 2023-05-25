@@ -471,7 +471,7 @@
        .login1 {
            position: absolute;
            left: 50%;
-           top: 100%;
+           top: 770%;
            transform: translateX(-50%) translateY(-50%);
        }
 
