@@ -10,19 +10,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@100;400;500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
     <link href="/assets/img/logo-rodape.svg" rel="icon">
     <title>Self Check</title>
 </head>
 
 <body>
-    
+
+    <div>
+        <h3 id="texto-avaliacao">Compartilhe sua sugestão, reporte um problema ou envie uma mensagem de satisfação!
+            Valorizamos sua
+            experiência e gostaríamos de ouvir seu feedback. </h3>
+    </div>
+
+    <div id="form-avaliacao">
+        <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 60px; width: 300px;"></textarea>
+            <label for="floatingTextarea2">Assunto</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 200px; width: 300px;"></textarea>
+            <label for="floatingTextarea2">Mensagem</label>
+        </div>
+    </div>
+
+    <button type="submit" id="btt-enviar">
+        <div>Enviar</div>
+    </button>
+
     <footer>
-        <ul id="rodape">
+        <ul id="rodape" style="margin-bottom: 1px;">
             <li id="icon-forum">
-                <img src="img/icon-forum-vazio.svg" alt="">
+                <img src="img/icon-forum-preenchido.svg" alt="">
             </li>
             <li id="icon-pontos">
-                <img src="img/icon-pontos-preenchido.svg" alt="">
+                <img src="img/icon-pontos-vazio.svg" alt="">
             </li>
             <li id="icon-checkin">
                 <img src="img/icon-checkin-vazio.svg" alt="">
@@ -32,9 +56,9 @@
             </li>
         </ul>
     </footer>
-    
-    <script src="/assets/js/pontos.js"></script>
-    
+
+    <script src="/assets/js/script.js"></script>
+
 </body>
 
 </html>
