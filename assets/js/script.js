@@ -29,7 +29,7 @@ function redirectToLogin() {
 
 
  document.getElementById("icon-forum").onclick = function () {
-  location.href = "forum.html";
+  location.href = "avaliacao.html";
 };
 
 document.getElementById("icon-pontos").onclick = function () {
