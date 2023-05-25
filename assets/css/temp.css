@@ -71,7 +71,7 @@ body {
     font-family: 'Montserrat';
     width: 90%;
     padding: 15%;
-    margin-top: 44%;
+    margin-top: 43%;
     margin-left: 5%;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
@@ -111,7 +111,7 @@ body {
     font-family: 'Montserrat';
     width: 90%;
     padding: 15%;
-    margin-top: 84%;
+    margin-top: 81%;
     margin-left: 5%;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
@@ -142,7 +142,7 @@ body {
     font-family: 'Montserrat';
     width: 90%;
     padding: 15%;
-    margin-top: 123%;
+    margin-top: 121%;
     margin-left: 5%;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
@@ -241,16 +241,6 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 0.05em;
-    color: #000000;
-}
-
-#pontos {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
     line-height: 15px;
     letter-spacing: 0.05em;
     color: #000000;

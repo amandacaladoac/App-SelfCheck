@@ -1,5 +1,5 @@
 let pontos = localStorage.getItem("pontos") || 0;
-const PONTOS_MAXIMOS = 100;
+const PONTOS_MAXIMOS = 200;
 
 function salvarPontos() {
   localStorage.setItem('pontos', pontos);
@@ -68,8 +68,6 @@ function updateProgress3(points) {
   progressBar.style.width = progressPercent.toFixed(0) + '%';
   progressLabel.textContent = progressPercent.toFixed(0) + '%';
 }
-
-
 
 inicializarPontos();
 
