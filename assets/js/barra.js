@@ -4,6 +4,7 @@ function atualizarPontos() {
   updateProgress(pontos, 40); 
   updateProgress2(pontos, 20); 
   updateProgress3(pontos, 50);
+  updateProgress4(pontos, 50);
 }
 
 function updateProgress(points, totalPoints) {
@@ -25,6 +26,14 @@ function updateProgress2(points, totalPoints) {
 function updateProgress3(points, totalPoints) {
   var progressBar = document.querySelector('.progresso-barra3 div');
   var progressLabel = document.querySelector('.progresso-label3');
+  var progressPercent = (points / totalPoints) * 100;
+  progressBar.style.width = progressPercent + '%';
+  progressLabel.textContent = progressPercent + '%';
+}
+
+function updateProgress4(points, totalPoints) {
+  var progressBar = document.querySelector('.progresso-barra4 div');
+  var progressLabel = document.querySelector('.progresso-label4');
   var progressPercent = (points / totalPoints) * 100;
   progressBar.style.width = progressPercent + '%';
   progressLabel.textContent = progressPercent + '%';
