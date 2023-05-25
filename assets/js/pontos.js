@@ -72,16 +72,7 @@ function updateProgress3(points) {
 inicializarPontos();
 
 
-document.getElementById("fechar-popup").onclick = function () {
-  location.href = "pontos-aluno.html";
-  adicionarPontos(10);
-};
 
- /* TEST */
-document.getElementById("test").onclick = function () {
-  location.href = "pontos-aluno.html";
-  adicionarPontos(10);
-};
 document.getElementById("test2").onclick = function () {
   location.href = "pontos-aluno.html";
   removerPontos(10)
