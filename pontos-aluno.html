@@ -112,13 +112,24 @@
                 <img src="img/icon-perfil-vazio.svg" alt="">
             </li>
         </ul>
-    </footer>
-    <script src="/assets/js/barra.js"></script>
-    <script src="/assets/js/pontos.js"></script>
-    <script src="/assets/js/script.js"></script>
-    <script>
-        atualizarPontos();
-    </script>
 </body>
+</footer>
+<script src="/assets/js/barra.js"></script>
+<script src="/assets/js/pontos.js"></script>
+<script src="/assets/js/script.js"></script>
+<script src="/assets/js/iscroll.js"></script>
+<script>
+    atualizarPontos();
+    window.onload = function () {
+        var myScroll = new IScroll('#Card', {
+            scrollbars: true,
+            mouseWheel: true,
+            interactiveScrollbars: true,
+            shrinkScrollbars: 'scale',
+            fadeScrollbars: true
+        });
+    }
+</script>
+
 
 </html>
