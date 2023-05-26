@@ -15,83 +15,85 @@
 </head>
 
 <body>
-    <div class="mini-perfil">
-        <img class="mini-perfil-foto1" src="img/foto-perfil-preenchido.svg" alt="mini-perfil-foto">
-        <div class="mini-perfil-texto1">
-            <h1 class="mini-perfil-id1">Usuário</h1>
-            <h3 class="mini-perfil-id2">Usuario_test@fac.pe.senac.br</h3>
-            <p><span id="pontos"></span></p>
+    <div id="Card">
+        <div class="mini-perfil">
+            <img class="mini-perfil-foto1" src="img/foto-perfil-preenchido.svg" alt="mini-perfil-foto">
+            <div class="mini-perfil-texto1">
+                <h1 class="mini-perfil-id1">Usuário</h1>
+                <h3 class="mini-perfil-id2">Usuario_test@fac.pe.senac.br</h3>
+                <p><span id="pontos"></span></p>
+            </div>
+            <div class="mini-perfil-image2"><img class="mini-perfil-foto2" src="img/icon-edit.svg"
+                    alt="mini-perfil-foto" onclick="adicionarPontos(10)">
+            </div>
         </div>
-        <div class="mini-perfil-image2"><img class="mini-perfil-foto2" src="img/icon-edit.svg" alt="mini-perfil-foto"
-                onclick="adicionarPontos(10)">
+        <div class="recompensa-pontos1" onclick="removerPontos(90)">
+            <div class="recompensa-pontos1-image">
+                <img class="recompensa-pontos1-foto" src="/assets/img/livro-pontos.png" alt="recompensa-pontos1-foto">
+            </div>
+            <div class="recompensa-pontos1-texto1">
+                <h1 class="recompensa-pontos1-ts1">Leve mais um livro</h1>
+            </div>
+            <div class="recompensa-pontos1-texto2">
+                <h1 class="recompensa-pontos1-ts2">Você poderá alugar um livro a mais.</h1>
+            </div>
+            <div class="recompensa-pontos1-texto4">
+                <h1 class="recompensa-pontos1-ts4">90 Pontos</h1>
+            </div>
+            <div class="progresso-barra">
+                <div class="progresso-label">0%</div>
+            </div>
         </div>
-    </div>
-    <div class="recompensa-pontos1" onclick="removerPontos(90)">
-        <div class="recompensa-pontos1-image">
-            <img class="recompensa-pontos1-foto" src="/assets/img/livro-pontos.png" alt="recompensa-pontos1-foto">
+        <div class="recompensa-pontos2" onclick="removerPontos(80)">
+            <div class="recompensa-pontos1-image">
+                <img class="recompensa-pontos1-foto" src="/assets/img/tempo-pontos.png" alt="recompensa-pontos1-foto">
+            </div>
+            <div class="recompensa-pontos1-texto1">
+                <h1 class="recompensa-pontos1-ts1">Tempo extra</h1>
+            </div>
+            <div class="recompensa-pontos1-texto2">
+                <h1 class="recompensa-pontos1-ts2">2 dias a mais com o livro alugado.</h1>
+            </div>
+            <div class="recompensa-pontos1-texto4">
+                <h1 class="recompensa-pontos1-ts4">80 Pontos</h1>
+            </div>
+            <div class="progresso-barra2">
+                <div class="progresso-label2">0%</div>
+            </div>
         </div>
-        <div class="recompensa-pontos1-texto1">
-            <h1 class="recompensa-pontos1-ts1">Leve mais um livro</h1>
+        <div class="recompensa-pontos3" onclick="removerPontos(150)">
+            <div class="recompensa-pontos1-image">
+                <img class="recompensa-pontos1-foto" src="/assets/img/ganhe-livro.png" alt="recompensa-pontos1-foto">
+            </div>
+            <div class="recompensa-pontos1-texto1">
+                <h1 class="recompensa-pontos1-ts1">Ganhe um Livro</h1>
+            </div>
+            <div class="recompensa-pontos1-texto2">
+                <h1 class="recompensa-pontos1-ts2">Escolha um livro disponível para doação.</h1>
+            </div>
+            <div class="recompensa-pontos1-texto4">
+                <h1 class="recompensa-pontos1-ts4">150 Pontos</h1>
+            </div>
+            <div class="progresso-barra3">
+                <div class="progresso-label3">0%</div>
+            </div>
         </div>
-        <div class="recompensa-pontos1-texto2">
-            <h1 class="recompensa-pontos1-ts2">Você poderá alugar um livro a mais.</h1>
-        </div>
-        <div class="recompensa-pontos1-texto4">
-            <h1 class="recompensa-pontos1-ts4">90 Pontos</h1>
-        </div>
-        <div class="progresso-barra">
-            <div class="progresso-label">0%</div>
-        </div>
-    </div>
-    <div class="recompensa-pontos2" onclick="removerPontos(80)">
-        <div class="recompensa-pontos1-image">
-            <img class="recompensa-pontos1-foto" src="/assets/img/tempo-pontos.png" alt="recompensa-pontos1-foto">
-        </div>
-        <div class="recompensa-pontos1-texto1">
-            <h1 class="recompensa-pontos1-ts1">Tempo extra</h1>
-        </div>
-        <div class="recompensa-pontos1-texto2">
-            <h1 class="recompensa-pontos1-ts2">2 dias a mais com o livro alugado.</h1>
-        </div>
-        <div class="recompensa-pontos1-texto4">
-            <h1 class="recompensa-pontos1-ts4">80 Pontos</h1>
-        </div>
-        <div class="progresso-barra2">
-            <div class="progresso-label2">0%</div>
-        </div>
-    </div>
-    <div class="recompensa-pontos3" onclick="removerPontos(150)">
-        <div class="recompensa-pontos1-image">
-            <img class="recompensa-pontos1-foto" src="/assets/img/ganhe-livro.png" alt="recompensa-pontos1-foto">
-        </div>
-        <div class="recompensa-pontos1-texto1">
-            <h1 class="recompensa-pontos1-ts1">Ganhe um Livro</h1>
-        </div>
-        <div class="recompensa-pontos1-texto2">
-            <h1 class="recompensa-pontos1-ts2">Escolha um livro disponível para doação.</h1>
-        </div>
-        <div class="recompensa-pontos1-texto4">
-            <h1 class="recompensa-pontos1-ts4">150 Pontos</h1>
-        </div>
-        <div class="progresso-barra3">
-            <div class="progresso-label3">0%</div>
-        </div>
-    </div>
-    <div class="recompensa-pontos4" onclick="removerPontos(120)">
-        <div class="recompensa-pontos1-image">
-            <img class="recompensa-pontos1-foto" src="/assets/img/desconto.png" alt="recompensa-pontos1-foto">
-        </div>
-        <div class="recompensa-pontos1-texto1">
-            <h1 class="recompensa-pontos1-ts1">Desconto da Multa</h1>
-        </div>
-        <div class="recompensa-pontos1-texto2">
-            <h1 class="recompensa-pontos1-ts2">Desconto de 1 dia na multa.</h1>
-        </div>
-        <div class="recompensa-pontos1-texto4">
-            <h1 class="recompensa-pontos1-ts4">120 Pontos</h1>
-        </div>
-        <div class="progresso-barra4">
-            <div class="progresso-label4">0%</div>
+        <div class="recompensa-pontos4" onclick="removerPontos(120)">
+            <div class="recompensa-pontos1-image">
+                <img class="recompensa-pontos1-foto" src="/assets/img/desconto.png" alt="recompensa-pontos1-foto">
+            </div>
+            <div class="recompensa-pontos1-texto1">
+                <h1 class="recompensa-pontos1-ts1">Desconto da Multa</h1>
+            </div>
+            <div class="recompensa-pontos1-texto2">
+                <h1 class="recompensa-pontos1-ts2">Desconto de 1 dia na multa.</h1>
+            </div>
+            <div class="recompensa-pontos1-texto4">
+                <h1 class="recompensa-pontos1-ts4">120 Pontos</h1>
+            </div>
+            <div class="progresso-barra4">
+                <div class="progresso-label4">0%</div>
+            </div>
         </div>
     </div>
     </div>

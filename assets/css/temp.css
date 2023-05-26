@@ -10,6 +10,10 @@ body {
     background: #F9F9F9;
 }
 
+#Card {
+    position: absolute;
+}
+
 .mini-perfil {
     position: fixed;
     display: flex;
@@ -71,7 +75,7 @@ body {
     align-items: center;
     font-family: 'Montserrat';
     width: 90%;
-    padding: 15%;
+    padding: 13%;
     margin-top: 43%;
     margin-left: 5%;
     background: #FFFFFF;
@@ -111,7 +115,7 @@ body {
     align-items: center;
     font-family: 'Montserrat';
     width: 90%;
-    padding: 15%;
+    padding: 14%;
     margin-top: 81%;
     margin-left: 5%;
     background: #FFFFFF;
@@ -142,7 +146,7 @@ body {
     align-items: center;
     font-family: 'Montserrat';
     width: 90%;
-    padding: 15%;
+    padding: 14%;
     margin-top: 121%;
     margin-left: 5%;
     background: #FFFFFF;
@@ -253,7 +257,7 @@ body {
     align-items: center;
     font-family: 'Montserrat';
     width: 90%;
-    padding: 15%;
+    padding: 13%;
     margin-top: 159%;
     margin-left: 5%;
     background: #FFFFFF;
