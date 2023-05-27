@@ -8,20 +8,197 @@
 
 body {
     background: #F9F9F9;
+    height: 2000px;
 }
 
-#Card {
+#mini-perfil {
+    position: absolute;
+    width: 91%;
+    height: 121px;
+    max-width: 374px;
+    height: 118px;
+    left: 50%;
+    top: 11%;
+    opacity: 1;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 20px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#mini-perfil2 {
+    position: absolute;
+    width: 91%;
+    height: 121px;
+    max-width: 374px;
+    height: 118px;
+    left: 50%;
+    top: 34%;
+    opacity: 1;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 20px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#mini-perfil3 {
+    position: absolute;
+    width: 91%;
+    height: 121px;
+    max-width: 374px;
+    height: 118px;
+    left: 50%;
+    top: 57%;
+    opacity: 1;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 20px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#mini-perfil4 {
+    position: absolute;
+    width: 91%;
+    height: 121px;
+    max-width: 374px;
+    height: 118px;
+    left: 50%;
+    top: 78%;
+    opacity: 1;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 20px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#mini-perfil5 {
+    position: absolute;
+    width: 91%;
+    height: 121px;
+    max-width: 374px;
+    height: 118px;
+    left: 50%;
+    top: 97%;
+    opacity: 1;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 20px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#foto-perfil {
+    position: absolute;
+    width: 25%;
+    height: auto;
+    left: 15%;
+    top: 55px;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+
+#corpo li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    list-style-type: none;
+    transform: translateX(-2%) translateY(-50%);
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#icon-edit {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 91%;
+    top: -15px;
+}
+
+.mini-perfil-id1 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    right: 9%;
+    bottom: -25px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 34px;
+
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    color: #263238;
+}
+
+.mini-perfil-id2 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 3%;
+    top: 28px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 157.9%;
+
+    text-align: center;
+
+    color: #888888;
+}
+
+#icon-ponto {
+    position: absolute;
+    width: 18px;
+    left: 90px;
+    right: 78.99%;
+    top: 55px;
+    bottom: 14.34%;
+}
+
+#ponto {
+    position: absolute;
+    width: 93px;
+    height: 22px;
+    left: 120px;
+    top: 55px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157.9%;
+    /* or 22px */
+
+    color: #666666;
+}
+
+/*#Card {
     position: absolute;
 }
 
 .mini-perfil {
-    position: fixed;
+    position: absolute;
     display: flex;
     align-items: center;
     width: 91%;
     padding: 3%;
     margin-top: 6%;
-    margin-left: 4%;
+    margin-left: 5%;
     box-sizing: border-box;
     background: #FFFFFF;
     box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
@@ -70,7 +247,7 @@ body {
 }
 
 .recompensa-pontos1 {
-    position: fixed;
+    position: absolute;
     display: flex;
     align-items: center;
     font-family: 'Montserrat';
@@ -110,7 +287,7 @@ body {
 }
 
 .recompensa-pontos2 {
-    position: fixed;
+    position: absolute;
     display: flex;
     align-items: center;
     font-family: 'Montserrat';
@@ -141,7 +318,7 @@ body {
 
 
 .recompensa-pontos3 {
-    position: fixed;
+    position: absolute;
     display: flex;
     align-items: center;
     font-family: 'Montserrat';
@@ -298,7 +475,7 @@ body {
 .progresso-label4 {
     font-size: 11px;
     text-align: center;
-}
+}*/
 
 #rodape {
     position: fixed;
@@ -309,9 +486,10 @@ body {
     flex-direction: row;
     justify-content: center;
     background: #004A8D;
+    z-index: 2;
 }
 
-#pontos{
+#pontos {
     font-family: 'Montserrat';
 }
 
@@ -336,6 +514,7 @@ body {
     margin-left: 13%;
 }
 
+*/
 /* Avaliações */
 
 .avaliacoes {
@@ -381,7 +560,7 @@ body {
     border-radius: 5px;
     border: none;
     transform: translateX(-50%) translateY(-50%);
-    
+
 
     text-align: center;
     font-family: 'Montserrat';
