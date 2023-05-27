@@ -71,7 +71,7 @@ body {
     letter-spacing: 0.05em;
     color: #000000;
     margin-top: -80px;
-    margin-left: 250px;
+    margin-left: 240px;
 }
 
 .recompensa-pontos1-foto {
@@ -107,7 +107,7 @@ body {
 
 .recompensa-pontos2 {
     position: absolute;
-    width: 349px;
+    width: 344px;
     height: 120px;
     max-width: 374px;
     left: 50%;
@@ -140,7 +140,7 @@ body {
     margin-left: 40px;
 }
 
-.recompensa-pontos1-ts4 {
+.recompensa-pontos1-ts42 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -149,7 +149,7 @@ body {
     letter-spacing: 0.05em;
     color: #000000;
     margin-top: -80px;
-    margin-left: 250px;
+    margin-left: 230px;
 }
 
 .recompensa-pontos1-foto2 {
