@@ -27,68 +27,160 @@ body {
     transform: translateX(-50%) translateY(-50%);
 }
 
-#mini-perfil2 {
+.recompensa-pontos1 {
     position: absolute;
-    width: 91%;
-    height: 121px;
+    width: 359px;
+    height: 120px;
     max-width: 374px;
-    height: 118px;
     left: 50%;
-    top: 34%;
+    top: 33%;
     opacity: 1;
     background: #FFFFFF;
     box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 20px;
     transform: translateX(-50%) translateY(-50%);
 }
 
-#mini-perfil3 {
+.recompensa-pontos1-ts1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: -57px;
+    margin-right: 25px;
+}
+
+.recompensa-pontos1-ts2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 25px;
+    margin-top: -47px;
+    margin-left: 40px;
+}
+
+.recompensa-pontos1-ts4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-top: -80px;
+    margin-left: 250px;
+}
+
+.recompensa-pontos1-foto {
+    width: 63px;
+    height: 59px;
+}
+
+.progresso-barra {
     position: absolute;
-    width: 91%;
-    height: 121px;
+    margin-top: -4%;
+    margin-left: 6%;
+    width: 300px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.progresso-barra div {
+    height: 100%;
+    text-align: right;
+    padding: 0 10px;
+    line-height: 10px;
+    width: 0;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 10px;
+}
+
+.progresso-label {
+    font-size: 11px;
+    text-align: center;
+}
+
+.recompensa-pontos2 {
+    position: absolute;
+    width: 359px;
+    height: 120px;
     max-width: 374px;
-    height: 118px;
     left: 50%;
-    top: 57%;
+    top: 56%;
     opacity: 1;
     background: #FFFFFF;
     box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 20px;
     transform: translateX(-50%) translateY(-50%);
 }
 
-#mini-perfil4 {
-    position: absolute;
-    width: 91%;
-    height: 121px;
-    max-width: 374px;
-    height: 118px;
-    left: 50%;
-    top: 78%;
-    opacity: 1;
-    background: #FFFFFF;
-    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    padding: 20px;
-    transform: translateX(-50%) translateY(-50%);
+.recompensa-pontos1-ts12 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: -57px;
+    margin-right: 25px;
 }
 
-#mini-perfil5 {
+.recompensa-pontos1-ts22 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 25px;
+    margin-top: -47px;
+    margin-left: 40px;
+}
+
+.recompensa-pontos1-ts4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-top: -80px;
+    margin-left: 250px;
+}
+
+.recompensa-pontos1-foto2 {
+    width: 63px;
+    height: 59px;
+}
+
+.progresso-barra2 {
     position: absolute;
-    width: 91%;
-    height: 121px;
-    max-width: 374px;
-    height: 118px;
-    left: 50%;
-    top: 97%;
-    opacity: 1;
-    background: #FFFFFF;
-    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    padding: 20px;
-    transform: translateX(-50%) translateY(-50%);
+    margin-top: -4%;
+    margin-left: 6%;
+    width: 300px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.progresso-barra2 div {
+    height: 100%;
+    text-align: right;
+    padding: 0 10px;
+    line-height: 10px;
+    width: 0;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 10px;
+}
+
+.progresso-label2 {
+    font-size: 11px;
+    text-align: center;
 }
 
 #foto-perfil {
@@ -186,6 +278,7 @@ body {
 
     color: #666666;
 }
+
 
 /*#Card {
     position: absolute;
@@ -301,14 +394,6 @@ body {
     border-radius: 5px;
 }
 
-.recompensa-pontos1-ts2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 25px;
-}
-
 
 .recompensa-pontos1-texto2 {
     position: absolute;
@@ -338,32 +423,6 @@ body {
     height: 15px;
     margin-bottom: 24%;
     margin-left: 57%;
-}
-
-.progresso-barra {
-    position: absolute;
-    margin-bottom: -23%;
-    margin-left: -11%;
-    width: 300px;
-    height: 10px;
-    background-color: #ddd;
-    border-radius: 10px;
-}
-
-.progresso-barra div {
-    height: 100%;
-    text-align: right;
-    padding: 0 10px;
-    line-height: 10px;
-    width: 0;
-    background-color: #4caf50;
-    color: white;
-    border-radius: 10px;
-}
-
-.progresso-label {
-    font-size: 11px;
-    text-align: center;
 }
 
 .progresso-barra2 {
@@ -416,16 +475,6 @@ body {
 .progresso-label3 {
     font-size: 11px;
     text-align: center;
-}
-
-.recompensa-pontos1-ts4 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 0.05em;
-    color: #000000;
 }
 
 .recompensa-pontos4 {

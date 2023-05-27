@@ -21,7 +21,7 @@
             <div>
                 <ul id="corpo">
                     <li>
-                        <img id="icon-edit" src="assets/img/icon-edit.svg" alt="">
+                        <img id="icon-edit" src="assets/img/icon-edit.svg" alt="" onclick="adicionarPontos(10)">
                     </li>
                     <li>
                         <h1 class="mini-perfil-id1">Usuário</h1>
@@ -34,81 +34,58 @@
         </div>
     </main>
 
-    <div id="mini-perfil2">
+    <div class="recompensa-pontos1" onclick="removerPontos(90)">
         <div id="logo">
-            <img id="foto-perfil" src="assets/img/foto-perfil.svg" alt="">
-            <div>
-                <ul id="corpo">
-                    <li>
-                        <img id="icon-edit" src="assets/img/icon-edit.svg" alt="">
-                    </li>
-                    <li class="test">
-                        <h1 class="mini-perfil-id1">Usuário</h1>
-                        <h3 class="mini-perfil-id2">Usuario_test@fac.pe.senac.br</h3>
-                        <img id="icon-ponto" src="img/Vector.svg">
-                        <h4 id="ponto"><span id="pontos"></span></h4>
-                    </li>
-                </ul>
+            <div id="logo">
+                <img class="recompensa-pontos1-foto" src="/assets/img/livro-pontos.png" alt="recompensa-pontos1-foto">
+                <div>
+                    <ul id="corpo">
+                        <li>
+                            <h1 class="recompensa-pontos1-ts4">90 Pontos</h1>
+                        </li>
+                        <li>
+                            <h1 class="recompensa-pontos1-ts1">Leve mais um livro</h1>
+                        </li>
+                        <li>
+                            <h1 class="recompensa-pontos1-ts2">Você poderá alugar um livro a mais.</h1>
+                        </li>
+                        <li>
+                            <div class="progresso-barra">
+                                <div class="progresso-label">0%</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
-    <div id="mini-perfil3">
+    <div class="recompensa-pontos2" onclick="removerPontos(80)">
         <div id="logo">
-            <img id="foto-perfil" src="assets/img/foto-perfil.svg" alt="">
-            <div>
-                <ul id="corpo">
-                    <li>
-                        <img id="icon-edit" src="assets/img/icon-edit.svg" alt="">
-                    </li>
-                    <li>
-                        <h1 class="mini-perfil-id1">Usuário</h1>
-                        <h3 class="mini-perfil-id2">Usuario_test@fac.pe.senac.br</h3>
-                        <img id="icon-ponto" src="img/Vector.svg">
-                        <h4 id="ponto"><span id="pontos"></span></h4>
-                    </li>
-                </ul>
+            <div id="logo">
+                <img class="recompensa-pontos1-foto2" src="/assets/img/tempo-pontos.png" alt="recompensa-pontos1-foto">
+                <div>
+                    <ul id="corpo">
+                        <li>
+                            <h1 class="recompensa-pontos1-ts4">80 Pontos</h1>
+                        </li>
+                        <li>
+                            <h1 class="recompensa-pontos1-ts12">Tempo Extra</h1>
+                        </li>
+                        <li>
+                            <h1 class="recompensa-pontos1-ts22">2 dias a mais com o livro alugado.</h1>
+                        </li>
+                        <li>
+                            <div class="progresso-barra2">
+                                <div class="progresso-label2">0%</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
-    <div id="mini-perfil4">
-        <div id="logo">
-            <img id="foto-perfil" src="assets/img/foto-perfil.svg" alt="">
-            <div>
-                <ul id="corpo">
-                    <li>
-                        <img id="icon-edit" src="assets/img/icon-edit.svg" alt="">
-                    </li>
-                    <li>
-                        <h1 class="mini-perfil-id1">Usuário</h1>
-                        <h3 class="mini-perfil-id2">Usuario_test@fac.pe.senac.br</h3>
-                        <img id="icon-ponto" src="img/Vector.svg">
-                        <h4 id="ponto"><span id="pontos"></span></h4>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div id="mini-perfil5">
-        <div id="logo">
-            <img id="foto-perfil" src="assets/img/foto-perfil.svg" alt="">
-            <div>
-                <ul id="corpo">
-                    <li>
-                        <img id="icon-edit" src="assets/img/icon-edit.svg" alt="">
-                    </li>
-                    <li>
-                        <h1 class="mini-perfil-id1">Usuário</h1>
-                        <h3 class="mini-perfil-id2">Usuario_test@fac.pe.senac.br</h3>
-                        <img id="icon-ponto" src="img/Vector.svg">
-                        <h4 id="ponto"><span id="pontos"></span></h4>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
     <!-- <div id="Card">
         <div class="mini-perfil">
             <img class="mini-perfil-foto1" src="img/foto-perfil-preenchido.svg" alt="mini-perfil-foto">
@@ -211,7 +188,6 @@
 <script src="/assets/js/barra.js"></script>
 <script src="/assets/js/pontos.js"></script>
 <script src="/assets/js/script.js"></script>
-<script src="/assets/js/iscroll.js"></script>
 <script>
     atualizarPontos();
 </script>
