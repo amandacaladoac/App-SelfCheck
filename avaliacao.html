@@ -22,20 +22,19 @@
             Valorizamos sua
             experiência e gostaríamos de ouvir seu feedback. </h3>
     </div>
-
     <div id="form-avaliacao">
         <div class="form-floating mb-3">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+            <textarea class="form-control" placeholder="Leave a comment here" id="assuntoTextarea"
                 style="height: 60px; width: 300px;"></textarea>
-            <label for="floatingTextarea2">Assunto</label>
+            <label for="assuntoTextarea">Assunto</label>
         </div>
         <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+            <textarea class="form-control" placeholder="Leave a comment here" id="mensagemTextarea"
                 style="height: 200px; width: 300px;"></textarea>
-            <label for="floatingTextarea2">Mensagem</label>
+            <label for="mensagemTextarea">Mensagem</label>
         </div>
     </div>
-
+    
     <button type="submit" id="btt-enviar">
         <div>Enviar</div>
     </button>
@@ -58,6 +57,21 @@
     </footer>
 
     <script src="/assets/js/script.js"></script>
+    <script>
+        const form = document.getElementById('form-avaliacao');
+        const submitButton = document.getElementById('btt-enviar');
+    
+        submitButton.addEventListener('click', function(event) {
+            event.preventDefault();
+    
+            const assuntoInput = form.querySelector('#assuntoTextarea');
+            const mensagemInput = form.querySelector('#mensagemTextarea');
+            assuntoInput.value = '';
+            mensagemInput.value = '';
+
+            alert('Enviado com sucesso!');
+        });
+    </script>
 
 </body>
 
