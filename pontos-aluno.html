@@ -138,21 +138,21 @@
         </div>
     </div>
 </body>
-    <footer>
-        <ul id="rodape">
-            <li id="icon-forum">
-                <img src="img/icon-forum-vazio.svg" alt="">
-            </li>
-            <li id="icon-pontos">
-                <img src="img/icon-pontos-preenchido.svg" alt="">
-            </li>
-            <li id="icon-checkin">
-                <img src="img/icon-checkin-vazio.svg" alt="">
-            </li>
-            <li id="icon-perfil">
-                <img src="img/icon-perfil-vazio.svg" alt="">
-            </li>
-        </ul>
+<footer>
+    <ul id="rodape">
+        <li id="icon-forum">
+            <img src="img/icon-forum-vazio.svg" alt="">
+        </li>
+        <li id="icon-pontos">
+            <img src="img/icon-pontos-preenchido.svg" alt="">
+        </li>
+        <li id="icon-checkin">
+            <img src="img/icon-checkin-vazio.svg" alt="">
+        </li>
+        <li id="icon-perfil">
+            <img src="img/icon-perfil-vazio.svg" alt="">
+        </li>
+    </ul>
 </footer>
 <script src="/assets/js/barra.js"></script>
 <script src="/assets/js/pontos.js"></script>
@@ -160,6 +160,12 @@
 <script>
     atualizarPontos();
 </script>
+<script>
+    const buttonSairPerfil = document.getElementById('icon-edit');
 
+    buttonSairPerfil.addEventListener('click', function () {
+        window.location.href = 'perfil.html';
+    });
+</script>
 
 </html>
