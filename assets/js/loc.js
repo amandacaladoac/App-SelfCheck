@@ -1,6 +1,6 @@
 var map;
-var targetLat = -8.060623;
-var targetLng = -34.8746694;
+var targetLat = -8.0605637;
+var targetLng = -34.8748852;
 var targetRadius = 100; // em metros
 var checkInBtn = document.getElementById('check-in-btn');
 
