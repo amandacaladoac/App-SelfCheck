@@ -1,7 +1,7 @@
 var map;
 var targetLat = -8.0605637;
 var targetLng = -34.8748852;
-var targetRadius = 100; // em metros
+var targetRadius = 500; // em metros
 var checkInBtn = document.getElementById('check-in-btn');
 
 // Declara uma variável global para o marcador
